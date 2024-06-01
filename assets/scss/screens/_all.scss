@@ -1,0 +1,24 @@
+@use '../components/reset';
+@use '../components/scrollbar';
+@use '../components/logo';
+@use '../components/nav';
+@use '../components/footer';
+
+
+body {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #f3f6fd;
+}
+
+#app {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.container>div {}
+
+@import '../layouts/base';

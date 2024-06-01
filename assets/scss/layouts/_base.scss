@@ -1,0 +1,62 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#site {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+#site::before {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: " ";
+  // background-image: url("../../../public/bg1.jpg");
+  opacity: 0.1;
+  z-index: -1;
+}
+
+#site.container {
+  overflow: auto;
+  flex: 1;
+  display: grid;
+  grid-template-columns: 50.061px 618fr 50.061px 392fr;
+  grid-template-rows: 81px 1fr 30.939px;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Icon PageHeader Focus SideHeader"
+    "XBar Main Bar SideMain"
+    "Start PageFooter Set SideFooter";
+}
+
+
+#__nuxt {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: #f3f6fd;
+}
+
+
+.container {
+  padding: 0 5px;
+}
+
+#page-content {
+  overflow: auto;
+}
+
+/* **************************************** */
