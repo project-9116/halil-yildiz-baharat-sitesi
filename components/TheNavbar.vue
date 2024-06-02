@@ -1,28 +1,33 @@
 <template>
-  <nav>
+  <header>
     <div class="container">
-      <div class="flex v-center">
-        <NuxtLink class="nav-item" to="/urunlerimiz">
-          <Icon name="salt" />
-          Ürünler
-        </NuxtLink>
-
-        <!-- TODO: anasayfadayken hakkimzda bolumune, degilken anasayfaya yonlendirecek -->
-        <NuxtLink :to="nextRoute">
-          <NuxtImg id="logo" src="/site/logo.png" />
-        </NuxtLink>
-
-        <NuxtLink class="nav-item" to="/degerlerimiz">
-          İletişim <Icon name="phone" />
-        </NuxtLink>
+      <nav>
+        <div>
+          <NuxtLink class="nav-item" to="/urunlerimiz">
+            <Icon name="salt" />
+          </NuxtLink>
+        </div>
+        <div class="logo">
+          <!-- TODO: anasayfadayken hakkimzda bolumune, degilken anasayfaya yonlendirecek -->
+          <NuxtLink :to="nextRoute">
+            <NuxtImg id="logo" src="/site/halil-yildiz-baharat-logosu.png" />
+          </NuxtLink>
+        </div>
+        <div>
+          <NuxtLink class="nav-item" to="/iletisim">
+            <Icon name="phone" />
+          </NuxtLink>
+        </div>
         <!-- <NuxtLink to="/degerlerimiz"> Degerlerimiz </NuxtLink> -->
-      </div>
 
-      <!-- <div class="flex v-center t-center">
+        <!-- <div class="flex v-center t-center">
         <NuxtLink to="/hakkimizda"> Halil Yildiz Baharat </NuxtLink>
       </div> -->
+
+      </nav>
     </div>
-  </nav>
+  </header>
+
 </template>
 <script setup>
 import { useRouter } from "vue-router";

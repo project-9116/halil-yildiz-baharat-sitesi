@@ -71,8 +71,25 @@ div {
 }
 
 /* /SCROLLBAR */
+div.logo {
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
 #logo {
-  max-height: 80px;
+  max-height: 64px;
+  padding: 0px 16px 16px 16px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  border-radius: 50%;
+  z-index: 999;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #fff;
 }
 
 a:has(#logo) {
@@ -81,16 +98,32 @@ a:has(#logo) {
 }
 
 nav {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 60px;
+}
+
+nav > div {
+  display: flex;
+  justify-content: center;
 }
 
 .nav-item {
-  align-items: center;
   display: flex;
-  gap: 6px;
-  padding: 2px;
+  flex-direction: column;
+  align-items: center;
+  font-size: 9px;
   text-decoration: none;
-  color: rgb(63, 158, 105);
+  color: rgb(231, 131, 44);
+}
+
+.icon {
+  border: 1px dashed #159647;
+  border-radius: 50%;
+  padding: 6px;
+  width: 36px;
+  height: 36px;
 }
 
 footer {
@@ -115,7 +148,6 @@ body {
   width: 100%;
   height: 100%;
   position: fixed;
-  background-color: #f3f6fd;
 }
 
 #app {
@@ -168,7 +200,6 @@ body {
   top: 0;
   left: 0;
   overflow: hidden;
-  background-color: #f3f6fd;
 }
 
 .container {
@@ -177,6 +208,11 @@ body {
 
 #page-content {
   overflow: auto;
+}
+
+.content {
+  padding: 24px 24px;
+  text-align: center;
 }
 
 /* **************************************** */
@@ -221,13 +257,16 @@ body {
     top: 0;
     left: 0;
     overflow: hidden;
-    background-color: #f3f6fd;
   }
   .container {
     padding: 0 5px;
   }
   #page-content {
     overflow: auto;
+  }
+  .content {
+    padding: 24px 24px;
+    text-align: center;
   }
   /* **************************************** */
 }

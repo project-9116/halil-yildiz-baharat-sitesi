@@ -47,7 +47,6 @@ body {
   top: 0;
   left: 0;
   overflow: hidden;
-  background-color: #f3f6fd;
 }
 
 
@@ -59,4 +58,8 @@ body {
   overflow: auto;
 }
 
+.content{
+  padding: 24px 24px;
+  text-align: center;
+}
 /* **************************************** */

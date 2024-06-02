@@ -1,6 +1,21 @@
+div.logo{
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
 #logo {
-  max-height: 80px;
-
+  max-height: 64px;
+  padding:0px 16px 16px 16px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  border-radius: 50%;
+  z-index: 999;
+  position: absolute;
+  top:-20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #fff;
 }
 
 a:has(#logo) {

@@ -1,7 +1,7 @@
 // app.config.ts
 export default defineAppConfig({
   nuxtIcon: {
-    size: "24px", // default <Icon> size applied
+    size: "28px", // default <Icon> size applied
     class: "icon", // default <Icon> class applied
     aliases: {
       phone: "game-icons:rotary-phone",
