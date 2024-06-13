@@ -4,6 +4,9 @@ export default defineNuxtConfig({
   modules: ["@nuxt/image", "nuxt-icon"],
   css: ["~/assets/scss/theme.scss"],
 
+  app: {
+    pageTransition: { name: "page", mode: "out-in" },
+  },
   build: {
     // loaders: {
     //   scss: {

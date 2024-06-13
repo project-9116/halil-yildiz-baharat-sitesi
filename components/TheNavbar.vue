@@ -8,8 +8,7 @@
           </NuxtLink>
         </div>
         <div class="logo">
-          <!-- TODO: anasayfadayken hakkimzda bolumune, degilken anasayfaya yonlendirecek -->
-          <NuxtLink :to="nextRoute">
+          <NuxtLink @click="navigating()" :to="nextRoute">
             <NuxtImg id="logo" src="/site/halil-yildiz-baharat-logosu.png" />
           </NuxtLink>
         </div>
@@ -23,11 +22,9 @@
         <!-- <div class="flex v-center t-center">
         <NuxtLink to="/hakkimizda"> Halil Yildiz Baharat </NuxtLink>
       </div> -->
-
       </nav>
     </div>
   </header>
-
 </template>
 <script setup>
 import { useRouter } from "vue-router";
@@ -36,13 +33,16 @@ import { ref } from "vue";
 const nextRoute = ref("/");
 const router = useRouter();
 
-router.afterEach((to) => {
-  if (to.fullPath === "/") {
+function navigating() {
+  console.log("Simdiki uzanti: ", router.currentRoute.value.fullPath);
+  if (router.currentRoute.value.fullPath === "/") {
     nextRoute.value = "hakkimizda";
   } else {
-    nextRoute.value = "";
+    nextRoute.value = "/";
   }
-});
+
+  router.push(nextRoute.value);
+}
 </script>
 
 <style></style>
