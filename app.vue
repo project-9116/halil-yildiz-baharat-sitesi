@@ -6,8 +6,13 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import "~/assets/css/theme.css";
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+console.log(router.options);
 </script>
 <style>
 .page-enter-active,

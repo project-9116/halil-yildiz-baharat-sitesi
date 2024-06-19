@@ -1,0 +1,32 @@
+  [
+    {
+      "title": "Baharat1",
+      "info": "icerik icerik icerik",
+      "img": "ornek1.png",
+      "slug": "baharat-1"
+    },
+    {
+      "title": "Baharat2",
+      "info": "icerik icerik icerik",
+      "img": "baharat2.png",
+      "slug": "baharat-2"
+    },
+    {
+      "title": "Baharat3",
+      "info": "icerik icerik icerik",
+      "img": "baharat3.png",
+      "slug": "baharat-3"
+    },
+    {
+      "title": "Baharat4",
+      "info": "icerik icerik icerik",
+      "img": "baharat4.png",
+      "slug": "baharat-4"
+    },
+    {
+      "title": "Baharat5",
+      "info": "icerik icerik icerik",
+      "img": "baharat5.png",
+      "slug": "baharat-5"
+    }
+  ]
