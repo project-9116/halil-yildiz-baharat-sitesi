@@ -1,0 +1,68 @@
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: calc(33.333% - 40px); /* üç kart yan yana */
+    max-width: 400px;
+    text-align: left;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-card NuxtImg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .product-card h2 {
+    font-size: 1.5em;
+    margin: 15px;
+    color: #d35400;
+  }
+  
+  .product-card p {
+    font-size: 1em;
+    margin: 0 15px 15px;
+  }
+  
+  .badge-container {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    padding: 15px;
+    margin-top: auto;
+  }
+  
+  .badge {
+    background-color: #d35400;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.9em;
+  }
+  
+  @media (max-width: 768px) {
+    .product-card {
+      width: calc(50% - 30px); /* iki kart yan yana */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-card {
+      width: 100%; /* tek kart */
+    }
+  }

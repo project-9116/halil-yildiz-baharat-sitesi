@@ -26,6 +26,17 @@ div {
   width: 100%;
 }
 
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #d35400;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
 .flex {
   display: flex;
 
@@ -39,3 +50,4 @@ div {
 .t-center {
   justify-content: center;
 }
+
