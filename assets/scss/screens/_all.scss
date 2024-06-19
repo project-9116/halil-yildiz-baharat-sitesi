@@ -5,6 +5,10 @@
 @use '../components/footer';
 @use '../components/product';
 
+:root{
+  --primary-color: rgba(231, 131, 44, .15);
+  --primary-header-color: rgba(231, 131, 44);
+}
 body {
   display: flex;
   width: 100%;
@@ -16,6 +20,28 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
+}
+
+.page-menu li{
+  list-style: none;
+  
+  background-color: var(--primary-color);
+  margin-bottom: 24px;
+  color: var(--primary-header-color);
+  font-weight: 600;
+  font-size: 1em;
+  border-radius: 8px;
+}
+.page-menu li:last-child{
+  margin-bottom: 0px;
+}
+
+.page-menu .nav-item{
+  background-position: 100% -25%;
+  padding:32px 24px;
+  background-repeat: no-repeat;
+  align-items: flex-start;
+  font-size: inherit;
 }
 
 @import '../layouts/base';
