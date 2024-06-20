@@ -13,11 +13,11 @@
         </NuxtLink>
         <div class="product-details">
           <h2>{{ product.title }}</h2>
-          <p>{{ product.info }}</p>
+
           <div class="badge-container">
-            <span class="badge">2Kg</span>
-            <span class="badge">5Kg</span>
-            <span class="badge">10Kg</span>
+            <span class="badge">2 Kg</span>
+            <span class="badge">5 Kg</span>
+            <span class="badge">10 Kg</span>
           </div>
         </div>
       </div>

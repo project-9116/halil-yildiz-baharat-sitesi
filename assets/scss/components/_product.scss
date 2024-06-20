@@ -6,6 +6,9 @@
   }
   
   .product-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 12px;
@@ -29,22 +32,26 @@
   }
   
   .product-card h2 {
-    font-size: 1.5em;
-    margin: 15px;
-    color: #d35400;
+    font-size: 1.2em;
+    color: var(--primary-header-color);
+    text-align: center;
   }
   
   .product-card p {
     font-size: 1em;
-    margin: 0 15px 15px;
   }
-  
+  .product-details{
+    padding:15px;
+    display: flex;
+  flex-direction: column;
+  }
   .badge-container {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     gap: 10px;
-    padding: 15px;
+    padding: 15px 15px 0px 15px;
     margin-top: auto;
+    text-align: center;
   }
   
   .badge {
