@@ -1,32 +1,128 @@
-  [
-    {
-      "title": "Baharat1",
-      "info": "icerik icerik icerik",
-      "img": "ornek1.png",
-      "slug": "baharat-1"
-    },
-    {
-      "title": "Baharat2",
-      "info": "icerik icerik icerik",
-      "img": "baharat2.png",
-      "slug": "baharat-2"
-    },
-    {
-      "title": "Baharat3",
-      "info": "icerik icerik icerik",
-      "img": "baharat3.png",
-      "slug": "baharat-3"
-    },
-    {
-      "title": "Baharat4",
-      "info": "icerik icerik icerik",
-      "img": "baharat4.png",
-      "slug": "baharat-4"
-    },
-    {
-      "title": "Baharat5",
-      "info": "icerik icerik icerik",
-      "img": "baharat5.png",
-      "slug": "baharat-5"
-    }
-  ]
+[
+  {
+    "title": "Pulbiber",
+    "info": "Acılı ve baharatlı lezzetlerin vazgeçilmezi kırmızı pulbiber, yemeklerinize enfes bir tat katar.",
+    "img": "baharat1.png",
+    "slug": "pulbiber"
+  },
+  {
+    "title": "Karabiber",
+    "info": "Karabiber, dünyada en çok kullanılan baharat olup her çeşit yemeğe eşsiz bir lezzet katar.",
+    "img": "baharat2.png",
+    "slug": "karabiber"
+  },
+  {
+    "title": "Nane",
+    "info": "Ferahlatıcı kokusu ve serinletici tadıyla nane, yemeklere ve içeceklere ayrı bir lezzet katar.",
+    "img": "baharat3.png",
+    "slug": "nane"
+  },
+  {
+    "title": "Kimyon",
+    "info": "Kimyon, Akdeniz mutfağının vazgeçilmez baharatlarından biridir ve yemeklere eşsiz bir aroma verir.",
+    "img": "baharat4.png",
+    "slug": "kimyon"
+  },
+  {
+    "title": "Zerdeçal",
+    "info": "Zerdeçal, Hint mutfağının olmazsa olmaz baharatıdır ve yemeklere enfes bir renk ve tat katar.",
+    "img": "baharat5.png",
+    "slug": "zerdecal"
+  },
+  {
+    "title": "Kekik",
+    "info": "Kekik, Akdeniz yemeklerine eşsiz bir aroma katar ve lezzetli yemeklerin vazgeçilmez baharatıdır.",
+    "img": "baharat4.png",
+    "slug": "kekik"
+  },
+  {
+    "title": "Toz Biber",
+    "info": "Toz biber, acılı ve baharatlı yemeklerin vazgeçilmez bir parçasıdır ve lezzetli bir tat sunar.",
+    "img": "baharat3.png",
+    "slug": "toz-biber"
+  },
+  {
+    "title": "Beyaz Karabiber",
+    "info": "Beyaz karabiber, karabiber ailesinin hafif ve yumuşak lezzetli üyesidir ve birçok yemeğe ayrı bir tat katar.",
+    "img": "baharat2.png",
+    "slug": "beyaz-karabiber"
+  },
+  {
+    "title": "Yedi Türlü",
+    "info": "Yedi Türlü, yedi farklı baharatın muhteşem karışımıdır ve her yemeğe eşsiz bir lezzet katar.",
+    "img": "baharat1.png",
+    "slug": "yedi-turlu"
+  },
+  {
+    "title": "İpek Pulbiber",
+    "info": "İpek pulbiber, yumuşak ve tatlı bir acılığa sahiptir ve yemeklere enfes bir tat katar.",
+    "img": "baharat2.png",
+    "slug": "ipek-pulbiber"
+  },
+  {
+    "title": "Sumak",
+    "info": "Sumak, Orta Doğu mutfağının vazgeçilmez bir baharatıdır ve yemeklere ekşimsi bir tat verir.",
+    "img": "baharat3.png",
+    "slug": "sumak"
+  },
+  {
+    "title": "Köri",
+    "info": "Köri, Hint mutfağının en önemli baharatlarından biridir ve yemeklere ayrı bir lezzet katar.",
+    "img": "baharat4.png",
+    "slug": "kori"
+  },
+  {
+    "title": "Yeni Bahar",
+    "info": "Yeni bahar, birçok farklı baharatın karışımıdır ve yemeklere enfes bir aroma ve lezzet katar.",
+    "img": "baharat5.png",
+    "slug": "yeni-bahar"
+  },
+  {
+    "title": "Sarımsak Tozu",
+    "info": "Sarımsak tozu, yemeklere enfes bir sarımsak aroması ve lezzeti katar ve her çeşit yemeğe uygundur.",
+    "img": "baharat4.png",
+    "slug": "sarimsak-tozu"
+  },
+  {
+    "title": "Tavuk Baharatı",
+    "info": "Tavuk baharatı, tavuk yemeklerine eşsiz bir lezzet katar ve her zaman tercih edilen bir karışımdır.",
+    "img": "baharat3.png",
+    "slug": "tavuk-baharati"
+  },
+  {
+    "title": "Limon Tuzu",
+    "info": "Limon tuzu, yemeklere ferahlık ve tazelik katar ve birçok yemeğe eşsiz bir tat verir.",
+    "img": "baharat2.png",
+    "slug": "limon-tuzu"
+  },
+  {
+    "title": "Kurutmalık Biber",
+    "info": "Kurutmalık biber, acılı ve baharatlı yemeklerin olmazsa olmazıdır ve enfes bir tat sunar.",
+    "img": "baharat1.png",
+    "slug": "kurutmalik-biber"
+  },
+  {
+    "title": "Kurutmalık Patlıcan",
+    "info": "Kurutmalık patlıcan, birçok yemeğe enfes bir lezzet ve aroma katar ve mutfaklarda vazgeçilmezdir.",
+    "img": "baharat2.png",
+    "slug": "kurutmalik-patlican"
+  },
+  {
+    "title": "Hindistan Cevizi",
+    "info": "Hindistan cevizi, Hint mutfağının vazgeçilmez bir parçasıdır ve yemeklere eşsiz bir lezzet katar.",
+    "img": "baharat3.png",
+    "slug": "hindistan-cevizi"
+  },
+  {
+    "title": "İsot",
+    "info": "İsot, birçok farklı baharat karışımının vazgeçilmez bir parçasıdır ve yemeklere enfes bir aroma katar.",
+    "img": "baharat4.png",
+    "slug": "isot"
+  },
+  {
+    "title": "Köfte Baharatı",
+    "info": "Köfte baharatı, köftelere eşsiz bir lezzet katar ve her zaman tercih edilen bir karışımdır.",
+    "img": "baharat5.png",
+    "slug": "kofte-baharati"
+  }
+]

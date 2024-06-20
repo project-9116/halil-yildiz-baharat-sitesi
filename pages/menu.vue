@@ -5,7 +5,7 @@
         <li>
           <NuxtLink
             class="nav-item"
-            to="/urunlerimiz"
+            to="/urunler"
             style="background-image: url(/products.png)"
           >
             ÜRÜNLERİMİZ

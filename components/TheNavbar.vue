@@ -3,7 +3,7 @@
     <div class="container">
       <nav>
         <div>
-          <NuxtLink class="nav-item" to="/urunlerimiz">
+          <NuxtLink class="nav-item" to="/urunler">
             <Icon name="salt" />
           </NuxtLink>
         </div>

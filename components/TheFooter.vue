@@ -18,7 +18,7 @@
 
         <div style="display: none">
           <NuxtLink to="/degerlerimiz"> Degerlerimiz </NuxtLink>
-          <NuxtLink to="/urunlerimiz"> iletisim </NuxtLink>
+          <NuxtLink to="/urunler"> iletisim </NuxtLink>
           <NuxtLink to="/"> Tüm hakları saklıdır.</NuxtLink>
         </div>
       </div>
@@ -42,7 +42,7 @@ import { ref } from "vue";
 const router = useRouter();
 
 const routerIndex = ref(3);
-console.log(router.options.routes);
+// console.log(router.options.routes);
 
 function navigateTo(whereTo) {
   if (routerIndex.value <= 5) {
@@ -50,6 +50,6 @@ function navigateTo(whereTo) {
   } else {
     routerIndex.value = 0;
   }
-  console.log(router.options.routes[routerIndex.value]);
+  // console.log(router.options.routes[routerIndex.value]);
 }
 </script>

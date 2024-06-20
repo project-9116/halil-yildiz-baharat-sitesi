@@ -62,7 +62,8 @@ p {
 
 @supports not (selector(::-webkit-scrollbar-thumb)) {
   .scrollbar {
-    scrollbar-color: var(--scroll-thumb-color, grey) var(--scroll-track, transparent);
+    scrollbar-color: var(--scroll-thumb-color, grey)
+      var(--scroll-track, transparent);
     scrollbar-width: thin;
   }
 }
@@ -139,7 +140,8 @@ nav > div {
 
 footer {
   padding: 8px 0px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .footer-item {
@@ -222,7 +224,7 @@ footer {
   }
 }
 :root {
-  --primary-color: rgba(231, 131, 44, .15);
+  --primary-color: rgba(231, 131, 44, 0.15);
   --primary-header-color: rgba(231, 131, 44);
 }
 
@@ -262,11 +264,13 @@ body {
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 header {
-  box-shadow: rgba(255, 115, 0, 0.3) 0px 5px 1169px, rgba(255, 115, 0, 0.2) 0px 5px 42px;
+  box-shadow: rgba(255, 115, 0, 0.3) 0px 5px 1169px,
+    rgba(255, 115, 0, 0.2) 0px 5px 42px;
 }
 
 #site {
@@ -332,10 +336,13 @@ header {
 /* **************************************** */
 @media screen and (min-width: 36.0625em) {
   body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
   }
   header {
-    box-shadow: rgba(255, 115, 0, 0.3) 0px 5px 1169px, rgba(255, 115, 0, 0.2) 0px 5px 42px;
+    box-shadow: rgba(255, 115, 0, 0.3) 0px 5px 1169px,
+      rgba(255, 115, 0, 0.2) 0px 5px 42px;
   }
   #site {
     position: relative;
@@ -393,4 +400,4 @@ header {
 }
 @media screen and (min-width: 48.0625em) {
   /* Stil kuralları */
-}/*# sourceMappingURL=theme.css.map */
+} /*# sourceMappingURL=theme.css.map */

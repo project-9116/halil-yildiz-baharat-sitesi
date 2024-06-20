@@ -1,13 +1,76 @@
 <template>
-  <div>
-    <div class="container">
-    <h1>Hakkımızda</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis alias,
-      eius magnam saepe itaque ad molestias asperiores vitae aspernatur
-      cupiditate similique inventore. Quod saepe quibusdam quae praesentium
-      architecto totam neque!
-    </p>
-    </div>
+  <div class="about-container">
+    <header class="header">
+      <h1>Hakkımızda</h1>
+    </header>
+    <section class="content">
+      <div class="image-container">
+        <NuxtImg src="/site/halil-yildiz-baharat-logosu.png" />
+      </div>
+      <div class="text-container">
+        <p>
+          Baharat dükkanımıza hoş geldiniz! Dünyanın dört bir yanından en iyi
+          baharatları size sunmaya adanmış durumdayız. Misyonumuz, mutfak
+          yaratımlarınızı bir üst seviyeye taşıyacak yüksek kaliteli ürünler
+          sağlamaktır.
+        </p>
+        <p>
+          Yolculuğumuz, lezzetlere olan tutkumuz ve en iyi malzemeleri temin
+          etme taahhüdümüzle başladı. Satışa sunduğumuz her bir baharatın katı
+          standartlarımızı karşıladığından emin olmak için doğrudan çiftçiler ve
+          tedarikçilerle çalışıyoruz.
+        </p>
+      </div>
+    </section>
   </div>
 </template>
+<style scoped>
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-container {
+  max-width: 800px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.text-container p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+</style>

@@ -5,7 +5,7 @@
       <div class="hero-text">
         <h1>halil yıldız baharat</h1>
         <h2>damak tadı kırıntıları</h2>
-        <NuxtLink to="/urunlerimiz">-> tüm ürünlerimizde</NuxtLink>
+        <NuxtLink to="/urunler">-> tüm ürünlerimizde</NuxtLink>
       </div>
     </div>
     <div class="container">
@@ -41,16 +41,7 @@
         </li>
       </ul>
 
-      <div class="urun-ozet">
-        <div class="banner"></div>
-        <div class="fotograf">
-          <NuxtImg src="baharat1.png" />
-          <NuxtImg src="baharat2.png" />
-          <NuxtImg src="baharat3.png" />
-          <NuxtImg src="baharat4.png" />
-          <NuxtImg src="baharat5.png" />
-        </div>
-      </div>
+      <MiniCatalog />
     </div>
   </div>
 </template>
