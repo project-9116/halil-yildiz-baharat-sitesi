@@ -1,7 +1,11 @@
 <template>
-  <div class="content">
-    <h1>ÜRÜNLER</h1>
-    <p>Acı, tatlı, tuzlu, ekşi<br />türlü türlü baharatlar</p>
+  <div class="page-content">
+    <div class="container">
+      <header>
+        <h1>ÜRÜNLER</h1>
+        <p>Acı, tatlı, tuzlu, ekşi<br />türlü türlü baharatlar</p>
+      </header>
+    
     <div v-if="catalog" class="product-grid">
       <div class="product-card" v-for="product in catalog" :key="product.title">
         <NuxtLink :to="`/${product.slug}`">
@@ -20,6 +24,7 @@
     </div>
     <div v-else>Yükleniyor...</div>
   </div>
+</div>
 </template>
 
 <script setup>

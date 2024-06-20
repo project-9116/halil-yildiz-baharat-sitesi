@@ -2,14 +2,14 @@
   <div class="container">
     <div class="contact-page">
       <div class="hero-section">
-        <h1>Bizimle İletişime Geçin</h1>
+        <h1>İLETİŞİM</h1>
       </div>
       <div class="contact-container">
         <div class="info-content">
           <NuxtImg src="baharat2.png" class="spice-image" />
           <div class="contact-info">
             <h2>İletişim Bilgileri</h2>
-            <p>Adres: Baharatcı Mahallesi, Lezzet Sokak, No: 123</p>
+            <p>Yeradı (adres): Baharatcı Mahallesi, Lezzet Sokak, No: 123</p>
             <p>Telefon: +90 123 456 7890</p>
             <p>Email: info@baharatci.com</p>
           </div>
@@ -20,11 +20,11 @@
             <h2>Bize Yazın</h2>
             <form @submit.prevent="handleSubmit">
               <div class="form-group">
-                <label for="name">İsim</label>
+                <label for="name">Ad</label>
                 <input type="text" id="name" v-model="formData.name" required />
               </div>
               <div class="form-group">
-                <label for="email">Email</label>
+                <label for="email">Eposta</label>
                 <input
                   type="email"
                   id="email"
@@ -33,14 +33,14 @@
                 />
               </div>
               <div class="form-group">
-                <label for="message">Mesaj</label>
+                <label for="message">Konu</label>
                 <textarea
                   id="message"
                   v-model="formData.message"
                   required
                 ></textarea>
               </div>
-              <button type="submit">Gönder</button>
+              <button type="submit">İlet</button>
             </form>
           </div>
           <NuxtImg src="baharat3.png" class="spice-image" />

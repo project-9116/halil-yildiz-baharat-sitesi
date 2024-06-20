@@ -1,13 +1,14 @@
 <template>
-  <div class="about-container">
-    <header class="header">
+  <div class="page-content">
+    <div class="container">
+      <header>
       <h1>Hakkımızda</h1>
     </header>
     <section class="content">
       <div class="image-container">
-        <NuxtImg src="/site/halil-yildiz-baharat-logosu.png" />
+        <NuxtImg src="/hakkimizda.jpeg" />
       </div>
-      <div class="text-container">
+      <div>
         <p>
           Baharat dükkanımıza hoş geldiniz! Dünyanın dört bir yanından en iyi
           baharatları size sunmaya adanmış durumdayız. Misyonumuz, mutfak
@@ -22,6 +23,7 @@
         </p>
       </div>
     </section>
+    </div>    
   </div>
 </template>
 <style scoped>
@@ -37,11 +39,6 @@
 .header {
   text-align: center;
   margin-bottom: 2rem;
-}
-
-.header h1 {
-  font-size: 2.5rem;
-  color: #333;
 }
 
 .content {
