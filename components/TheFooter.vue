@@ -2,18 +2,14 @@
   <footer>
     <div class="container flex">
       <div class="left-icon footer-item">
-        <NuxtLink
-          class="nav-item"
-          @click="navigateTo(-1)"
-          :to="router.options.routes[routerIndex].path"
-        >
+        <div class="nav-item" @click="navigateLeft()">
           <Icon name="left" />
-        </NuxtLink>
+        </div>
       </div>
 
       <div class="menu footer-item">
-        <NuxtLink class="nav-item" to="/menu">
-          <Icon name="hamburger" />
+        <NuxtLink class="nav-item" to="/urunler">
+          <Icon name="salt" />
         </NuxtLink>
 
         <div style="display: none">
@@ -24,13 +20,9 @@
       </div>
 
       <div class="right-icon footer-item">
-        <NuxtLink
-          class="nav-item"
-          @click="navigateTo(1)"
-          :to="router.options.routes[routerIndex].path"
-        >
+        <div class="nav-item" @click="navigateRight()">
           <Icon name="right" />
-        </NuxtLink>
+        </div>
       </div>
     </div>
   </footer>
@@ -41,15 +33,98 @@ import { ref } from "vue";
 
 const router = useRouter();
 
-const routerIndex = ref(3);
-// console.log(router.options.routes);
+const routerIndex = ref(2);
+const nextRoute = ref("");
+const currentRoute = ref("");
+const catalog = ref([]);
+const slugs = ref([]);
 
-function navigateTo(whereTo) {
-  if (routerIndex.value <= 5) {
-    routerIndex.value += whereTo;
-  } else {
-    routerIndex.value = 0;
+onMounted(async () => {
+  try {
+    const response = await fetch("/data/products.json");
+    console.log(response);
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
+    const products = await response.json();
+    catalog.value = products;
+    // Her nesnenin slug bilgisini almak için map kullanıyoruz
+    slugs.value = catalog.value.map((product) => product.slug);
+    console.log("Bunlar slugs:", slugs.value);
+  } catch (error) {
+    console.error("Veri çekme hatası:", error);
   }
-  // console.log(router.options.routes[routerIndex.value]);
+});
+
+//TODO: herhangi bir sayfadayken sayfalar arasi, herhangi bir urundeyken urunler arasi gezinsin.
+const routesArr = ref([
+  "degerlerimiz",
+  "urunler",
+  "",
+  "hakkimizda",
+  "iletisim",
+]);
+
+// async function navigateLeft() {
+//   if (routerIndex.value == 0) {
+//     routerIndex.value = 4;
+//     nextRoute.value = routesArr.value[routerIndex.value];
+//     await navigateTo("/" + nextRoute.value);
+//   } else {
+//     routerIndex.value -= 1;
+//     nextRoute.value = routesArr.value[routerIndex.value];
+//     await navigateTo("/" + nextRoute.value);
+//   }
+// }
+
+// async function navigateRight() {
+//   if (routerIndex.value == 4) {
+//     routerIndex.value = 0;
+//     nextRoute.value = routesArr.value[routerIndex.value];
+//     await navigateTo("/" + nextRoute.value);
+//   } else {
+//     routerIndex.value += 1;
+//     nextRoute.value = routesArr.value[routerIndex.value];
+//     await navigateTo("/" + nextRoute.value);
+//   }
+// }
+
+async function navigateLeft() {
+  console.log(router.options);
+  if (routerIndex.value == 0) {
+    routerIndex.value = 20;
+    nextRoute.value = slugs.value[routerIndex.value];
+    await navigateTo("/" + nextRoute.value);
+  } else {
+    routerIndex.value -= 1;
+    nextRoute.value = slugs.value[routerIndex.value];
+    await navigateTo("/" + nextRoute.value);
+  }
 }
+
+async function navigateRight() {
+  console.log(router.currentRoute.value);
+
+  if (routerIndex.value == 20) {
+    routerIndex.value = 0;
+    nextRoute.value = slugs.value[routerIndex.value];
+    await navigateTo("/" + nextRoute.value);
+  } else {
+    routerIndex.value += 1;
+    nextRoute.value = slugs.value[routerIndex.value];
+    await navigateTo("/" + nextRoute.value);
+  }
+}
+
+// async function navigatePages(whereTo) {
+//   if (routerIndex.value <= 4 && routerIndex.value >= 0) {
+//     routerIndex.value += whereTo;
+
+//     await navigateTo(routesArr[routerIndex.value]);
+//   } else {
+//     routerIndex.value = 1;
+//     return routesArr[routerIndex.value];
+//   }
+//   // console.log(router.options.routes[routerIndex.value]);
+// }
 </script>

@@ -1,18 +1,26 @@
 // germe = ekran
 $screens: (
-    class: 0,
-    // dikey tutulan telefon germeleri ve daha küçükleri
-    mobile: 576px,
-    // yatay tutulan telefon germeleri ve daha büyükleri
-    tablet: 768px,
-    // tablet bilgisayar germeleri ve daha büyükleri
-    laptop: 992px,
-    // dizüstü bilgisayar germeleri ve daha büyükleri
-    desktop: 1200px,
-    // düz bilgisayar germeleri ve daha büyükleri
-    televizyon: 1200px 
-    // düz bilgisayar germeleri ve daha büyükleri
+  class: 0,
+  // dikey tutulan telefon germeleri ve daha küçükleri
+  mobile: 576px,
+  // yatay tutulan telefon germeleri ve daha büyükleri
+  tablet: 768px,
+  // tablet bilgisayar germeleri ve daha büyükleri
+  laptop: 992px,
+  // dizüstü bilgisayar germeleri ve daha büyükleri
+  desktop: 1200px,
+  // düz bilgisayar germeleri ve daha büyükleri
+  televizyon: 1200px // düz bilgisayar germeleri ve daha büyükleri
 );
+
+
+@import url("https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+$font-family-base: 'Anuphan', sans-serif, system-ui;
+
+$font-family-second: 'Cairo', sans-serif, system-ui;
 
 
 /* 

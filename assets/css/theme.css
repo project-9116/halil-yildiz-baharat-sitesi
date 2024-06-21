@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
 /*
 
 none 	none 	< 568px
@@ -406,4 +408,33 @@ header {
 }
 @media screen and (min-width: 48.0625em) {
   /* Stil kuralları */
+}
+/* 
+    xs (extra small): 0 - 320px, küçük mobil cihazlar
+        @media screen and (max-width: 20em) {}
+
+    sm (small): 321px - 576px, çoğu mobil cihazlar
+        @media screen and (min-width: 20.0625em) and (max-width: 36em) {}
+
+    md (medium): 577px - 768px, büyük mobil cihazlar ve küçük tabletler
+        @media screen and (min-width: 36.0625em) and (max-width: 48em) {}
+
+    lg (large): 769px - 1024px, tabletler ve küçük dizüstü bilgisayarlar
+        @media screen and (min-width: 48.0625em) and (max-width: 64em) {}
+
+    xl (extra large): 1025px - 1280px, büyük tabletler ve standart masaüstü bilgisayarlar
+        @media screen and (min-width: 64.0625em) and (max-width: 80em) {}
+
+    xxl (extra extra large): 1281px - 1920px, geniş ekranlı dizüstü ve masaüstü bilgisayarlar
+        @media screen and (min-width: 80.0625em) and (max-width: 120em) {}
+
+    xxxl (extra extra extra large): 1921px - 2560px, ultra geniş ekranlar
+        @media screen and (min-width: 120.0625em) and (max-width: 160em) {}
+
+    x4k: 2561px ve üzeri, 4K ve üzeri çözünürlüklü ekranlar
+        @media screen and (min-width: 160.0625em) {}
+
+*/
+body {
+  font-family: "Anuphan", sans-serif, system-ui;
 }/*# sourceMappingURL=theme.css.map */

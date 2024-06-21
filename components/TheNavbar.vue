@@ -3,8 +3,8 @@
     <div class="container">
       <nav>
         <div>
-          <NuxtLink class="nav-item" to="/urunler">
-            <Icon name="salt" />
+          <NuxtLink class="nav-item" to="/menu">
+            <Icon name="hamburger" />
           </NuxtLink>
         </div>
         <div class="logo">

@@ -7,11 +7,11 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: "page", mode: "out-in" },
   },
-  build: {
-    // loaders: {
-    //   scss: {
-    //     additionalData: '@import "~/assets/styles/variables.scss";',
-    //   },
-    // },
-  },
+  // build: {
+  //   loaders: {
+  //     scss: {
+  //       additionalData: `@import "@/assets/scss/_settings.scss";`,
+  //     },
+  //   },
+  // },
 });
