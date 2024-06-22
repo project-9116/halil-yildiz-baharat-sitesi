@@ -7,11 +7,27 @@
       </header>
 
       <div v-if="catalog" class="product-grid">
-        <div
-          class="product-card"
-          v-for="product in catalog"
-          :key="product.title"
-        >
+        <div class="card-x" v-for="product in catalog" :key="product.title">
+          <div class="left">
+            <div class="box">
+              
+            </div>
+          </div>
+          <div class="right">
+            <div class="box">
+              <div class="box-img">
+                <img src="/ornek1.png" alt="..." />
+              </div>
+              <div class="box-detail">
+                <h1>{{ product.title }}</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div v-if="catalog" class="product-grid">
+        <div class="product-card" v-for="product in catalog" :key="product.title">
           <NuxtLink :to="`/${product.slug}`">
             <NuxtImg :src="product.img" alt="icerik filan" />
           </NuxtLink>
@@ -25,7 +41,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <div v-else>Yükleniyor...</div>
     </div>
   </div>
