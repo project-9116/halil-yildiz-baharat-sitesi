@@ -82,6 +82,7 @@
     height: 120px;
     position: relative;
     margin: 24px 0;
+    max-width: 290px;
   }
   .card-x .left{
     display: flex;
@@ -119,7 +120,7 @@
     flex:1;
   }
   .card-x .right .box .box-img img{
-    margin-left:-50%;
+    margin-left:-39%;
     scale: 3;
     filter: drop-shadow(3px 3px 3px #999);
   }
