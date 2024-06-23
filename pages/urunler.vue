@@ -9,14 +9,14 @@
       <div v-if="catalog" class="product-grid">
         <div class="card-x" v-for="product in catalog" :key="product.title">
           <div class="left">
-            <div class="box">
-              
-            </div>
+            <div class="box"></div>
           </div>
           <div class="right">
             <div class="box">
               <div class="box-img">
-                <img src="/ornek1.png" alt="..." />
+                <NuxtLink :to="`/${product.slug}`">
+                  <img src="/ornek1.png" alt="..." />
+                </NuxtLink>
               </div>
               <div class="box-detail">
                 <h1>{{ product.title }}</h1>
@@ -42,6 +42,7 @@
           </div>
         </div>
       </div> -->
+
       <div v-else>Yükleniyor...</div>
     </div>
   </div>

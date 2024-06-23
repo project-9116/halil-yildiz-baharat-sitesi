@@ -5,15 +5,17 @@
 @use '../components/footer';
 @use '../components/product';
 
-:root{
+:root {
   --primary-color: rgba(231, 131, 44, .15);
   --primary-header-color: rgba(231, 131, 44);
 }
+
 body {
   display: flex;
   width: 100%;
   height: 100%;
   position: fixed;
+  background-color: #f8eee7;
 }
 
 #app {
@@ -22,9 +24,9 @@ body {
   height: 100%;
 }
 
-.page-menu li{
+.page-menu li {
   list-style: none;
-  
+
   background-color: var(--primary-color);
   margin-bottom: 24px;
   color: var(--primary-header-color);
@@ -32,16 +34,31 @@ body {
   font-size: 1em;
   border-radius: 8px;
 }
-.page-menu li:last-child{
+
+.page-menu li:last-child {
   margin-bottom: 0px;
 }
 
-.page-menu .nav-item{
+.page-menu .nav-item {
   background-position: 100% -25%;
-  padding:32px 24px;
+  padding: 32px 24px;
   background-repeat: no-repeat;
   align-items: flex-start;
   font-size: inherit;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 200px;
+}
+
+.home-products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 @import '../layouts/base';

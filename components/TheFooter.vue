@@ -1,8 +1,8 @@
 <template>
   <footer>
-    <div class="container flex">
+    <div class="flex">
       <div class="left-icon footer-item">
-        <div class="nav-item" @click="navigateLeft()">
+        <div class="nav-item" @click="navigateBack()">
           <Icon name="left" />
         </div>
       </div>
@@ -20,7 +20,7 @@
       </div>
 
       <div class="right-icon footer-item">
-        <div class="nav-item" @click="navigateRight()">
+        <div class="nav-item" @click="navigateForward()">
           <Icon name="right" />
         </div>
       </div>
@@ -65,29 +65,67 @@ const routesArr = ref([
   "iletisim",
 ]);
 
-// async function navigateLeft() {
-//   if (routerIndex.value == 0) {
-//     routerIndex.value = 4;
-//     nextRoute.value = routesArr.value[routerIndex.value];
-//     await navigateTo("/" + nextRoute.value);
-//   } else {
-//     routerIndex.value -= 1;
-//     nextRoute.value = routesArr.value[routerIndex.value];
-//     await navigateTo("/" + nextRoute.value);
-//   }
-// }
+async function navigateBack() {
+  let currentPath = router.currentRoute.value.fullPath;
+  currentPath = currentPath.replace("/", "");
 
-// async function navigateRight() {
-//   if (routerIndex.value == 4) {
-//     routerIndex.value = 0;
-//     nextRoute.value = routesArr.value[routerIndex.value];
-//     await navigateTo("/" + nextRoute.value);
-//   } else {
-//     routerIndex.value += 1;
-//     nextRoute.value = routesArr.value[routerIndex.value];
-//     await navigateTo("/" + nextRoute.value);
-//   }
-// }
+  if (routesArr.value.includes(currentPath) || currentPath == "menu") {
+    routerIndex.value = routesArr.value.indexOf(currentPath);
+
+    if (routerIndex.value == 0) {
+      routerIndex.value = 4;
+      nextRoute.value = routesArr.value[routerIndex.value];
+      await navigateTo("/" + nextRoute.value);
+    } else {
+      routerIndex.value -= 1;
+      nextRoute.value = routesArr.value[routerIndex.value];
+      await navigateTo("/" + nextRoute.value);
+    }
+  } else {
+    routerIndex.value = slugs.value.indexOf(currentPath);
+
+    if (routerIndex.value == 0) {
+      routerIndex.value = 20;
+      nextRoute.value = slugs.value[routerIndex.value];
+      await navigateTo("/" + nextRoute.value);
+    } else {
+      routerIndex.value -= 1;
+      nextRoute.value = slugs.value[routerIndex.value];
+      await navigateTo("/" + nextRoute.value);
+    }
+  }
+}
+
+async function navigateForward() {
+  let currentPath = router.currentRoute.value.fullPath;
+  currentPath = currentPath.replace("/", "");
+
+  if (routesArr.value.includes(currentPath) || currentPath == "menu") {
+    routerIndex.value = routesArr.value.indexOf(currentPath);
+
+    if (routerIndex.value == 4) {
+      routerIndex.value = 0;
+      nextRoute.value = routesArr.value[routerIndex.value];
+      await navigateTo("/" + nextRoute.value);
+    } else {
+      routerIndex.value += 1;
+      nextRoute.value = routesArr.value[routerIndex.value];
+      await navigateTo("/" + nextRoute.value);
+    }
+  } else {
+    routerIndex.value = slugs.value.indexOf(currentPath);
+
+    if (routerIndex.value == 20) {
+      routerIndex.value = 0;
+      nextRoute.value = slugs.value[routerIndex.value];
+      await navigateTo("/" + nextRoute.value);
+    } else {
+      routerIndex.value += 1;
+      nextRoute.value = slugs.value[routerIndex.value];
+      await navigateTo("/" + nextRoute.value);
+    }
+  }
+}
 
 async function navigateLeft() {
   console.log(router.options);
