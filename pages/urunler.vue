@@ -15,7 +15,7 @@
             <div class="box">
               <div class="box-img">
                 <NuxtLink :to="`/${product.slug}`">
-                  <img src="/ornek1.png" alt="..." />
+                  <NuxtImg :src="`/yeniler/${product.slug}.png`" alt="..." />
                 </NuxtLink>
               </div>
               <div class="box-detail">

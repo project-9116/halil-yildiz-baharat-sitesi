@@ -1,141 +1,153 @@
 .product-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .product-card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.2s, box-shadow 0.2s;
-    width: calc(33.333% - 40px); /* üç kart yan yana */
-    max-width: 400px;
-    text-align: left;
-  }
-  
-  .product-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .product-card NuxtImg {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .product-card h2 {
-    font-size: 1.2em;
-    color: var(--primary-header-color);
-    text-align: center;
-  }
-  
-  .product-card p {
-    font-size: 1em;
-  }
-  .product-details{
-    padding:15px;
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: calc(33.333% - 40px);
+  /* üç kart yan yana */
+  max-width: 400px;
+  text-align: left;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card NuxtImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-card h2 {
+  font-size: 1.2em;
+  color: var(--primary-header-color);
+  text-align: center;
+}
+
+.product-card p {
+  font-size: 1em;
+}
+
+.product-details {
+  padding: 15px;
+  display: flex;
   flex-direction: column;
-  }
-  .badge-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 15px 15px 0px 15px;
-    margin-top: auto;
-    text-align: center;
-  }
-  
-  .badge {
-    background-color: #d35400;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 12px;
-    font-size: 0.9em;
-  }
-  
-  @media (max-width: 768px) {
-    .product-card {
-      width: calc(50% - 30px); /* iki kart yan yana */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .product-card {
-      width: 100%; /* tek kart */
-    }
-  }
+}
 
-  /*-------------------------------------------------------------------------------------*/
+.badge-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 15px 0px 15px;
+  margin-top: auto;
+  text-align: center;
+}
 
-  .card-x{
-    display: flex;
+.badge {
+  background-color: #d35400;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    width: calc(50% - 30px);
+    /* iki kart yan yana */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
     width: 100%;
-    height: 120px;
-    position: relative;
-    margin: 24px 0;
-    max-width: 290px;
+    /* tek kart */
   }
-  .card-x .left{
-    display: flex;
-    flex: 1;
-  }
-  .card-x .left .box{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    border-radius: 12px;
-    background-color: #d35400;
-    height: 100%;
-  }
+}
 
-  .card-x .right{
-    display: flex;
-    flex: 1;
-  }
-  .card-x .right .box{
-    background-color: #fefefe;
-    border-radius: 12px;
-    border: 1px solid #eee;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: calc(100% + 61%);
-    height: 82%;
-    margin: auto -61% auto -61%;
-    display: flex;
-  }
-  .card-x .right .box div{
-    display: flex;
-    align-items: center;
-    height: 100%;
-  }
-  .card-x .right .box .box-img{
-    flex:1;
-  }
-  .card-x .right .box .box-img img{
-    margin-left:-39%;
-    scale: 3;
-    filter: drop-shadow(3px 3px 3px #999);
-  }
-  .card-x .right .box .box-detail{
-    flex:3;
-    justify-content: center;
-  }
-  .card-x .right .box .box-detail h1{
-    font-size:13pt;
-    margin: 0;
-    text-align: center;
-    padding: 0 10px;
-  }
+/*-------------------------------------------------------------------------------------*/
 
-  /*-------------------------------------------------------------------------------------*/
-  @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+.card-x {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  position: relative;
+  margin: 24px 0;
+  max-width: 290px;
+}
+
+.card-x .left {
+  display: flex;
+  flex: 1;
+}
+
+.card-x .left .box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 12px;
+  background-color: #d35400;
+  height: 100%;
+}
+
+.card-x .right {
+  display: flex;
+  flex: 1;
+}
+
+.card-x .right .box {
+  background-color: #fefefe;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: calc(100% + 61%);
+  height: 82%;
+  margin: auto -61% auto -61%;
+  display: flex;
+}
+
+.card-x .right .box div {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.card-x .right .box .box-img {
+  flex: 1;
+}
+
+.card-x .right .box .box-img img {
+  margin-left: -39%;
+  scale: 3.6;
+  filter: drop-shadow(3px 3px 3px #999);
+}
+
+.card-x .right .box .box-detail {
+  flex: 3;
+  justify-content: center;
+}
+
+.card-x .right .box .box-detail h1 {
+  font-size: 13pt;
+  margin: 0;
+  text-align: center;
+  padding: 0 10px;
+}
+
+/*-------------------------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:800");
-

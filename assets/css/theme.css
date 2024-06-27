@@ -175,7 +175,8 @@ footer {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.2s, box-shadow 0.2s;
-  width: calc(33.333% - 40px); /* üç kart yan yana */
+  width: calc(33.333% - 40px);
+  /* üç kart yan yana */
   max-width: 400px;
   text-align: left;
 }
@@ -226,12 +227,14 @@ footer {
 
 @media (max-width: 768px) {
   .product-card {
-    width: calc(50% - 30px); /* iki kart yan yana */
+    width: calc(50% - 30px);
+    /* iki kart yan yana */
   }
 }
 @media (max-width: 480px) {
   .product-card {
-    width: 100%; /* tek kart */
+    width: 100%;
+    /* tek kart */
   }
 }
 /*-------------------------------------------------------------------------------------*/
@@ -286,7 +289,7 @@ footer {
 
 .card-x .right .box .box-img img {
   margin-left: -39%;
-  scale: 3;
+  scale: 3.6;
   filter: drop-shadow(3px 3px 3px #999);
 }
 
