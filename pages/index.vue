@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="hero">
-      <NuxtImg id="hero-img" src="heroBg2.jpg" />
+      <NuxtImg id="hero-img" src="/site/hero.jpg" />
       <div class="hero-text">
         <h1>halil yıldız baharat</h1>
         <h2>damak tadı kırıntıları</h2>
@@ -41,9 +41,14 @@
 }
 .hero-text {
   position: absolute;
+  width: auto;
   height: auto;
-  top: 40%;
-  left: 15%;
+  top: 25%;
+  padding:10%;
+  margin: 0 10%;
+  background-color: rgba(250, 250, 250, .9);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
 }
 
 #hero-img {
@@ -51,7 +56,7 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 </style>

@@ -29,16 +29,17 @@
 
 <style scoped>
 .spice-section {
+  margin-top: 100px;
   display: flex;
   justify-content: space-around;
-  background-color: #f8f2ec;
-  padding: 2rem 0;
+  flex-direction: column;
 }
 
 .spice-card {
+  margin-bottom: 60px;
   background-color: #fff;
   border-radius: 20px;
-  width: 30%;
+  width: 100%;
   text-align: center;
   color: #d35400;
   padding: 1.5rem;
