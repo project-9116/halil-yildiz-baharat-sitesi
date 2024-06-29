@@ -44,11 +44,12 @@
   width: auto;
   height: auto;
   top: 25%;
-  padding:10%;
+  padding: 10%;
   margin: 0 10%;
-  background-color: rgba(250, 250, 250, .9);
+  background-color: rgba(250, 250, 250, 0.9);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
+  opacity: 0.95;
 }
 
 #hero-img {

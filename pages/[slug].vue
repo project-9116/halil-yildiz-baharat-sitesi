@@ -3,7 +3,10 @@
     <div v-if="currentProduct" class="container">
       <div class="product-detail-wrapper">
         <div class="product-detail">
-          <NuxtImg :src="currentProduct.img" class="product-image" />
+          <NuxtImg
+            :src="`/tekil/${currentProduct.slug}.jpg`"
+            class="product-image"
+          />
           <div class="product-info">
             <h1>{{ currentProduct.title }}</h1>
             <p>{{ currentProduct.info }}</p>
@@ -18,7 +21,7 @@
               class="recommended-item"
             >
               <NuxtLink :to="`/${product.slug}`">
-                <NuxtImg :src="product.img" class="recommended-image" />
+                <NuxtImg :src="`/tekil/${product.slug}.jpg`" alt="..." />
               </NuxtLink>
               <h3>{{ product.title }}</h3>
             </div>
