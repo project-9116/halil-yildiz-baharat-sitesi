@@ -137,8 +137,8 @@ nav > div {
 .icon {
   border-radius: 50%;
   padding: 6px;
-  width: 36px;
-  height: 36px;
+  width: 28px;
+  height: 28px;
 }
 
 footer {
@@ -351,7 +351,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 200px;
+  gap: 120px;
 }
 
 .home-products {

@@ -1,7 +1,7 @@
 <template>
   <section class="spice-section">
     <div class="spice-card">
-      <NuxtImg src="baharat1.png" class="spice-image" />
+      <NuxtImg src="/konsept/konsept2.jpg" class="spice-image" />
       <h3>Önce İnsan</h3>
       <p>
         Tarımdan üretime, üretimden satışa, dağıtımdan son kullanıcıya kadar
@@ -9,7 +9,7 @@
       </p>
     </div>
     <div class="spice-card">
-      <NuxtImg src="baharat2.png" class="spice-image" />
+      <NuxtImg src="/konsept/konsept3.jpg" class="spice-image" />
       <h3>Önce Güven</h3>
       <p>
         Tüm birimlerimizde kalite ve güven esasına dayalı iş ilişkisi kurumsal
@@ -17,7 +17,7 @@
       </p>
     </div>
     <div class="spice-card">
-      <NuxtImg src="baharat3.png" class="spice-image" />
+      <NuxtImg src="/konsept/konsept5.jpg" class="spice-image" />
       <h3>Standartlara Uygunluk</h3>
       <p>
         Tüm hammaddelerin Türk Gıda Kodeksine uygunluğunun sağlanması ve kalite
@@ -50,7 +50,6 @@
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background-size: cover;
   background-position: center;
   margin: 0 auto 1rem;
   position: absolute;

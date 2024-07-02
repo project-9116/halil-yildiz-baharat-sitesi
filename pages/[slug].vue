@@ -3,13 +3,23 @@
     <div v-if="currentProduct" class="container">
       <div class="product-detail-wrapper">
         <div class="product-detail">
-          <NuxtImg
-            :src="`/tekil/${currentProduct.slug}.jpg`"
-            class="product-image"
-          />
+          <div class="product-image-container">
+            <NuxtImg
+              :src="`/tekil/${currentProduct.slug}.jpg`"
+              class="product-image"
+            />
+            <h1 class="product-title">{{ currentProduct.title }}</h1>
+          </div>
+
           <div class="product-info">
-            <h1>{{ currentProduct.title }}</h1>
             <p>{{ currentProduct.info }}</p>
+          </div>
+
+          <div class="other-photos">
+            <NuxtImg src="/pulbiber/mutfakta.jpg" class="product-thumbnail" />
+            <NuxtImg src="/pulbiber/tahtada1.jpg" class="product-thumbnail" />
+            <NuxtImg src="/pulbiber/tahtada2.jpg" class="product-thumbnail" />
+            <NuxtImg src="/pulbiber/tahtada3.jpg" class="product-thumbnail" />
           </div>
         </div>
         <div class="recommended-products">
@@ -65,7 +75,7 @@ onMounted(async () => {
 });
 </script>
 
-<!-- <style scoped>
+<style scoped>
 .container {
   margin: 0 auto;
   padding: 20px;
@@ -86,12 +96,49 @@ onMounted(async () => {
   margin-bottom: 40px;
 }
 
-.product-image {
+.product-image-container {
+  position: relative;
   width: 100%;
   max-width: 600px;
+}
+
+.product-image {
+  width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+}
+
+.product-title {
+  width: 100%;
+  background-color: rgba(231, 131, 44, 0.15);
+  color: #d35400;
+  position: absolute;
+  bottom: 10px;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.other-photos {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 5px 0;
+}
+
+.other-photos::-webkit-scrollbar {
+  height: 8px;
+}
+
+.other-photos::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.product-thumbnail {
+  max-width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .product-info {
@@ -140,88 +187,6 @@ onMounted(async () => {
     margin-left: 0;
     padding-left: 0;
     border-left: none;
-  }
-}
-</style> -->
-
-<style scoped>
-.container {
-  margin: 0 auto;
-  padding: 20px;
-  max-width: 1200px;
-}
-
-.product-detail {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 40px;
-  gap: 60px;
-}
-
-.product-image {
-  width: 100%;
-  max-width: 600px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-.product-info {
-  text-align: start;
-  border-radius: 10px;
-  padding: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.recommended-products {
-  margin-top: 40px;
-}
-
-.recommended-products h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.recommended-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.recommended-item {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  text-align: center;
-  max-width: 200px;
-  flex: 1 1 calc(33.333% - 20px);
-  box-sizing: border-box;
-}
-
-.recommended-image {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-@media (max-width: 768px) {
-  .product-detail {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  .recommended-item {
-    flex: 1 1 calc(50% - 20px);
-  }
-}
-
-@media (max-width: 480px) {
-  .recommended-item {
-    flex: 1 1 100%;
   }
 }
 </style>
