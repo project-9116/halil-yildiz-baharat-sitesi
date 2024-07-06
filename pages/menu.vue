@@ -6,7 +6,7 @@
           <NuxtLink
             class="nav-item"
             to="/urunler"
-            style="background-image: url(/products.png)"
+            style="background-image: url(/productsdeneme.png)"
           >
             ÜRÜNLERİMİZ
           </NuxtLink>

@@ -4,83 +4,34 @@
       <header>
         <h1>İLETİŞİM</h1>
       </header>
-    <section class="content">
-      <div class="contact-container">
-        <div class="info-content">
-          <NuxtImg src="baharat2.png" class="spice-image" />
-          <div class="contact-info">
-            <h2>İletişim Bilgileri</h2>
-            <p>Yeradı (adres): Baharatcı Mahallesi, Lezzet Sokak, No: 123</p>
-            <p>Telefon: +90 123 456 7890</p>
-            <p>Email: info@baharatci.com</p>
+      <section class="content">
+        <div class="contact-container">
+          <div class="info-content">
+            <NuxtImg src="baharat2.png" class="spice-image" />
+            <div class="contact-info">
+              <h2>İletişim Bilgileri</h2>
+              <p>Yeradı (adres): Baharatcı Mahallesi, Lezzet Sokak, No: 123</p>
+              <p>Telefon: +90 123 456 7890</p>
+              <p>Email: info@baharatci.com</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div>
-        <p>
-          Baharat ormanımıza hoş geldiniz! Anadolu'nun dört bir yanından en iyi baharatları bir araya getiriyoruz.
-          Aşlarınızda kullanacağınız baharatların sizi eşsiz bir usta aşçı gibi göstermesini hep isteriz.
-        </p>
-        <p>
-          Yolculuğumuz, lezzetlere olan tutkumuz ve en iyi malzemeleri temin
-          etme taahhüdümüzle başladı. Satışa sunduğumuz her bir baharatın katı
-          standartlarımızı karşıladığından emin olmak için doğrudan çiftçiler ve
-          tedarikçilerle çalışıyoruz.
-        </p>
-      </div>
-    </section>
-    </div>    
-  </div>
-
-  <!-- <div class="container">
-    <div class="contact-page">
-      <div class="hero-section">
-        <h1>İLETİŞİM</h1>
-      </div>
-      <div class="contact-container">
-        <div class="info-content">
-          <NuxtImg src="baharat2.png" class="spice-image" />
-          <div class="contact-info">
-            <h2>İletişim Bilgileri</h2>
-            <p>Yeradı (adres): Baharatcı Mahallesi, Lezzet Sokak, No: 123</p>
-            <p>Telefon: +90 123 456 7890</p>
-            <p>Email: info@baharatci.com</p>
-          </div>
+        <div>
+          <p>
+            Baharat ormanımıza hoş geldiniz! Anadolu'nun dört bir yanından en
+            iyi baharatları bir araya getiriyoruz. Aşlarınızda kullanacağınız
+            baharatların sizi eşsiz bir usta aşçı gibi göstermesini hep isteriz.
+          </p>
+          <p>
+            Yolculuğumuz, lezzetlere olan tutkumuz ve en iyi malzemeleri temin
+            etme taahhüdümüzle başladı. Satışa sunduğumuz her bir baharatın katı
+            standartlarımızı karşıladığından emin olmak için doğrudan çiftçiler
+            ve tedarikçilerle çalışıyoruz.
+          </p>
         </div>
-
-        <div class="form-content">
-          <div class="contact-form">
-            <h2>Bize Yazın</h2>
-            <form @submit.prevent="handleSubmit">
-              <div class="form-group">
-                <label for="name">Ad</label>
-                <input type="text" id="name" v-model="formData.name" required />
-              </div>
-              <div class="form-group">
-                <label for="email">Eposta</label>
-                <input
-                  type="email"
-                  id="email"
-                  v-model="formData.email"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="message">Konu</label>
-                <textarea
-                  id="message"
-                  v-model="formData.message"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit">İlet</button>
-            </form>
-          </div>
-          <NuxtImg src="baharat3.png" class="spice-image" />
-        </div>
-      </div>
+      </section>
     </div>
-  </div> -->
+  </div>
 </template>
 
 <script setup>
