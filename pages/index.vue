@@ -12,6 +12,8 @@
       <!-- TODO: sayfa yenilendiginde yeteri kadar sure gecmediyse degismesin
       urunler. -->
 
+      <HomeClients />
+
       <HomeSlogans />
 
       <HomeProducts />
