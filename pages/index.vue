@@ -12,7 +12,7 @@
       <!-- TODO: sayfa yenilendiginde yeteri kadar sure gecmediyse degismesin
       urunler. -->
 
-      <HomeClients />
+
 
       <HomeSlogans />
 
@@ -20,17 +20,23 @@
 
       <HomeValues />
 
-      <div class="about-us">
-        <h1>Hakkımızda</h1>
-        <p>
-          İstanbul'da iş varlığını sürdüren bir baharatçıyız. Doğrudan tarladan
-          temin edilen ürünlerin son kullanıcıya ulaştırılmasındaki bütün
-          hizmetleri ve üretim aşamalarını üstlenmekteyiz.
-        </p>
-        <NuxtLink to="/hakkimizda" class="button"
-          >Daha iyi tanımak için tıklayın.</NuxtLink
-        >
+      <div class="index-card">
+        <header>
+          <h1>HAKKIMIZDA</h1>
+        </header>
+        <section>
+          <p>
+            İstanbul'un bağrında baharat dünyasına adanmış bir işletmeyiz. Bildik bir deyiş ile bir baharatçıyız.
+            Tarladan sofraya kadar olan yolculukta, niteliği ve özeni hep gözetip koruyoruz.
+            Size en iyisini sunmak için çalışıyoruz.
+          </p>
+        </section>
+        <footer>
+          <NuxtLink to="/hakkimizda" class="button">Hepsini okumak için tıklayınız.</NuxtLink>
+        </footer>        
       </div>
+
+      <HomeClients />
     </div>
   </div>
 </template>

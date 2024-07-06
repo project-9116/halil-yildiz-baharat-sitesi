@@ -4,14 +4,14 @@
       <header>
         <h1>DEĞERLERİMİZ</h1>
       </header>
-      <h2>kalite</h2>
+      <h2>Nitelik</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque corrupti,
         architecto ullam iste obcaecati numquam recusandae, repellendus, facere
         quas aliquid esse officiis. Autem aperiam nobis tempora, voluptatem
         delectus suscipit vitae?
       </p>
-      <h2>guvence</h2>
+      <h2>Güvence</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque corrupti,
         architecto ullam iste obcaecati numquam recusandae, repellendus, facere

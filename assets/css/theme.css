@@ -306,6 +306,24 @@ footer {
 }
 
 /*-------------------------------------------------------------------------------------*/
+.index-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.index-card > header,
+.index-card > footer {
+  background-color: transparent;
+  border: 0px solid transparent;
+  box-shadow: none;
+}
+
+.index-card > section {
+  text-align: center;
+}
+
 :root {
   --primary-color: rgba(231, 131, 44, .15);
   --primary-header-color: rgba(231, 131, 44);
@@ -351,7 +369,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 120px;
+  gap: 90px;
 }
 
 .home-products {
