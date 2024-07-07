@@ -1,20 +1,22 @@
 <template>
-  <div>
+  <div class="page-content">
     <div v-if="currentProduct" class="container">
-      <div class="product-detail-wrapper">
-        <div class="product-detail">
-          <div class="product-image-container">
+      <header>
+        <h1>{{ currentProduct.title }}</h1>
+      </header>
+      <section>
+        <div class="product-image-container">
             <NuxtImg
-              :src="`/tekil/${currentProduct.slug}.jpg`"
+              :src="`/tekil/${currentProduct.slug}.png`"
               class="product-image"
             />
-            <h1 class="product-title">{{ currentProduct.title }}</h1>
-          </div>
-
-          <div class="product-info">
+        </div>
+        <div class="product-info">
             <p>{{ currentProduct.info }}</p>
-          </div>
-
+        </div>
+      </section>
+      <div class="product-detail-wrapper">
+        <div class="product-detail">
           <div class="other-photos">
             <NuxtImg src="/pulbiber/mutfakta.jpg" class="product-thumbnail" />
             <NuxtImg src="/pulbiber/tahtada1.jpg" class="product-thumbnail" />
@@ -22,6 +24,30 @@
             <NuxtImg src="/pulbiber/tahtada3.jpg" class="product-thumbnail" />
           </div>
         </div>
+
+
+
+        <div v-if="catalog" class="product-grid">
+        <div class="card-x" v-for="product in catalog" :key="product.title">
+          <div class="left">
+            <div class="box"></div>
+          </div>
+          <div class="right">
+            <div class="box">
+              <div class="box-img">
+                <NuxtLink :to="`/${product.slug}`">
+                  <NuxtImg :src="`/tekil/${product.slug}.png`" alt="..." />
+                </NuxtLink>
+              </div>
+              <div class="box-detail">
+                <h1>{{ product.title }}</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
         <div class="recommended-products">
           <h2>Önerilen Ürünler</h2>
           <div class="recommended-list">
@@ -100,13 +126,7 @@ onMounted(async () => {
   position: relative;
   width: 100%;
   max-width: 600px;
-}
-
-.product-image {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  text-align: center;
 }
 
 .product-title {
