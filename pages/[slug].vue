@@ -27,8 +27,11 @@
 
 
 
-        <div v-if="catalog" class="product-grid">
-        <div class="card-x" v-for="product in catalog" :key="product.title">
+        <div v-if="recommendedProducts" class="product-grid">
+          <header>
+            <h1>Diğer Ürünler</h1>
+          </header>
+        <div class="card-x" v-for="product in recommendedProducts" :key="product.title">
           <div class="left">
             <div class="box"></div>
           </div>
@@ -46,23 +49,6 @@
           </div>
         </div>
       </div>
-
-
-        <div class="recommended-products">
-          <h2>Önerilen Ürünler</h2>
-          <div class="recommended-list">
-            <div
-              v-for="product in recommendedProducts"
-              :key="product.id"
-              class="recommended-item"
-            >
-              <NuxtLink :to="`/${product.slug}`">
-                <NuxtImg :src="`/tekil/${product.slug}.jpg`" alt="..." />
-              </NuxtLink>
-              <h3>{{ product.title }}</h3>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
     <div class="container" v-else>
@@ -165,48 +151,11 @@ onMounted(async () => {
   text-align: center;
 }
 
-.recommended-products {
-  flex: 0 0 300px;
-  margin-left: 20px;
-  padding-left: 20px;
-  border-left: 1px solid #ccc;
-}
 
-.recommended-products h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.recommended-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.recommended-item {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  text-align: center;
-}
-
-.recommended-image {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
 
 @media (max-width: 768px) {
   .product-detail-wrapper {
     flex-direction: column;
-  }
-
-  .recommended-products {
-    margin-left: 0;
-    padding-left: 0;
-    border-left: none;
   }
 }
 </style>
