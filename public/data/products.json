@@ -1,97 +1,120 @@
 [
   {
     "title": "Pulbiber",
-    "info": "Acılı ve baharatlı lezzetlerin vazgeçilmezi kırmızı pulbiber, yemeklerinize enfes bir tat katar.",
+    "content": "Pulbiber, yemeklerinize mükemmel bir lezzet katmak için özenle toplanmış ve öğütülmüştür. Taze ve yoğun aromasıyla, yemeklerinizin tadını bir üst seviyeye çıkarır. Halis pulbiberimiz, her yemekte fark yaratmanızı sağlar. Yemeklerinize canlılık ve derinlik katacak bu baharat, mutfağınızın vazgeçilmezi olacak",
+    "info": "Kurutulmuş kırmızı biberlerin öğütülmesiyle elde edilen ve Türk mutfağının vazgeçilmez baharatlarından biridir. Yoğun kırmızı renge sahip olan pul biber, yemeklere hem renk hem de tat katar. Pul biberin tatlı, acı ve çok acı olmak üzere çeşitli türleri bulunur, bu sayede her damak zevkine hitap eder. Türk mutfağında yaygın olarak kullanılan pul biber, özellikle Güneydoğu Anadolu Bölgesi'nde sıklıkla tercih edilir. Bu baharat, kebap, dolma, sarma, çorba, sos ve çeşitli et yemeklerinde lezzeti artırmak için kullanılır. Ayrıca zeytinyağlı yemeklerde, mezelerde ve salatalarda da sıkça tercih edilir. Pul biber, yemeklere sadece acılık ve aroma katmakla kalmaz, aynı zamanda bağışıklık sistemini güçlendiren ve metabolizmayı hızlandıran özelliklere sahiptir. İçerdiği kapsaisin maddesi sayesinde metabolizmayı hızlandırır, bağışıklık sistemini güçlendirir ve antioksidan özellikleriyle vücudu serbest radikallerden korur. Osmanlı döneminden beri Türk mutfağının vazgeçilmez baharatlarından biri olmuştur.",
     "slug": "pulbiber"
   },
   {
     "title": "Karabiber",
-    "info": "Karabiber, dünyada en çok kullanılan baharat olup her çeşit yemeğe eşsiz bir lezzet katar.",
+    "content": "Birinci kalite karabiberimiz, güçlü ve keskin aromasıyla yemeklerinize eşsiz bir tat katar. Her öğünde tazeliğini ve doğallığını hissedeceksiniz. Karabiberimiz, dünya mutfağının vazgeçilmez bir parçası olup, et yemeklerinden salatalara kadar her tarife mükemmel uyum sağlar.",
+    "info": "Dünya mutfaklarının en yaygın ve en eski baharatlarından biridir. Siyah, yuvarlak taneleri ile bilinen karabiber, yemeklere keskin ve hafif acı bir tat katar. Karabiber, hem bütün halde hem de öğütülmüş olarak kullanılabilir. Genellikle et yemekleri, çorbalar, soslar, sebzeler ve deniz ürünleri gibi çeşitli yemeklerde tercih edilir. Özellikle biftek ve ızgara etlerin vazgeçilmez bir bileşenidir. Sadece lezzet katmakla kalmaz, antioksidan ve anti-inflamatuar özelliklere sahip olan karabiber, sindirimi kolaylaştırır ve metabolizmayı hızlandırır. Karabiber, vücuttaki zararlı serbest radikallerle savaşmaya yardımcı olan bileşikler içerir. Ayrıca metabolizmayı hızlandırarak kilo kontrolüne de katkıda bulunur.  İlk olarak Hindistan’da yetiştirilen karabiber, Romalılar tarafından Avrupa’ya tanıtılmıştır.",
     "slug": "karabiber"
   },
   {
     "title": "Nane",
-    "info": "Ferahlatıcı kokusu ve serinletici tadıyla nane, yemeklere ve içeceklere ayrı bir lezzet katar.",
+    "content": "Doğal ve taze nane, yemeklerinize ferah bir dokunuş katmak için idealdir. Salatalardan soslara, her türlü yemeğinizde kullanabileceğiniz bu lezzet, yemeklerinize benzersiz bir aroma katacaktır. Nane yapraklarının ferahlatıcı etkisiyle her lokmada doğallığı hissedin.",
+    "info": "Ferahlatıcı aroması ve hafif acımsı tadıyla bilinen popüler bir baharattır. Taze veya kurutulmuş olarak kullanılan nane, Türk mutfağında geniş bir kullanım alanına sahiptir. Nane, özellikle salatalar, yoğurtlu mezeler, çorbalar ve dolma gibi yemeklerde sıklıkla kullanılır. Ayrıca, çay olarak da demlenebilir ve ferahlatıcı içecekler hazırlanabilir. Bu baharatın aroması, yemeklere taze ve canlı bir lezzet katarken, sindirim sistemine de faydalıdır. Nane, mide bulantısını hafifletir, sindirimi kolaylaştırır ve mide rahatsızlıklarını yatıştırır. Aynı zamanda, anti-inflamatuar ve anti-bakteriyel özellikleri sayesinde bağışıklık sistemini destekler.",
     "slug": "nane"
   },
   {
     "title": "Kimyon",
-    "info": "Kimyon, Akdeniz mutfağının vazgeçilmez baharatlarından biridir ve yemeklere eşsiz bir aroma verir.",
+    "content": "Özgün ve derin aromasıyla halis kimyonumuz, et yemeklerinden çorbalara kadar her yemeğe özel bir tat katar. Kimyonun eşsiz aroması, özellikle Orta Doğu ve Akdeniz mutfağında kendini gösterir.",
+    "info": "Dünya mutfaklarında sıkça kullanılan ve özellikle Türk, Hint ve Orta Doğu mutfaklarının vazgeçilmez baharatlarından biridir. Küçük, oval şekilli tohumlarıyla bilinen kimyon, yemeklere karakteristik bir aroma ve hafif baharatlı bir tat katar. Kimyon, özellikle et yemekleri, çorbalar, pilavlar ve baklagil yemeklerinde yaygın olarak kullanılır. Aynı zamanda köfte ve çeşitli kebapların lezzetini artırmak için de tercih edilir. Bu baharat, sadece lezzet katmakla kalmaz, aynı zamanda sindirimi kolaylaştırıcı ve anti-inflamatuar özelliklere sahiptir. Kimyon, bağırsak sağlığını destekler, gaz ve şişkinlik gibi sindirim sorunlarını hafifletir. Ayrıca, demir açısından zengin olduğu için kansızlık sorunlarına da iyi gelir.",
     "slug": "kimyon"
   },
   {
+    "title": "Kekik",
+    "content": "Doğal yollarla kurutulmuş kekik, yemeklerinizdeki her bir ısırıkta doğanın lezzetini hissettirir. Taze ve yoğun aromasıyla sofralarınızın vazgeçilmezi olacak. Kekik, özellikle Akdeniz mutfağının vazgeçilmez baharatlarından biridir.",
+    "info": "Keskin ve aromatik kokusuyla bilinen, Akdeniz mutfağının vazgeçilmez baharatlarından biridir. Taze veya kurutulmuş olarak kullanılan kekik, yemeklere hem lezzet hem de sağlık katar. Kekik, özellikle et yemekleri, sebzeler, salatalar, çorbalar ve soslarda sıkça tercih edilir. Ayrıca pizza, makarna ve zeytinyağlı yemeklerin de vazgeçilmez bir bileşenidir. Kekik, yemeklere ekşi ve hafif acımsı bir tat katarak, lezzet dengesini sağlar. Kekik, bağışıklık sistemini güçlendirir, enfeksiyonlarla savaşır ve sindirimi destekler. Aynı zamanda, içerdiği uçucu yağlar sayesinde öksürük ve soğuk algınlığı gibi rahatsızlıklara da iyi gelir.",
+    "slug": "kekik"
+  },
+  {
     "title": "Zerdeçal",
-    "info": "Zerdeçal, Hint mutfağının olmazsa olmaz baharatıdır ve yemeklere enfes bir renk ve tat katar.",
+    "info": "Parlak sarı rengi ve güçlü aromasıyla bilinen bir baharattır. Asya mutfağında yaygın olarak kullanılan zerdeçal, yemeklere hem renk hem de lezzet katar. Zerdeçal, özellikle pilavlar, çorbalar, et yemekleri ve soslarda kullanılır. Hint mutfağının vazgeçilmez baharatlarından biri olan zerdeçal, köri karışımlarının da ana bileşenidir. Bu baharat, yemeklere lezzet katmanın yanı sıra, güçlü anti-inflamatuar ve antioksidan özelliklere sahiptir. Zerdeçal, bağışıklık sistemini destekler, sindirimi kolaylaştırır ve genel sağlığı iyileştirir. Ayrıca, cilt sağlığına katkıda bulunur ve doğal bir detoksifiye edicidir.",
     "slug": "zerdecal"
   },
   {
     "title": "Toz Biber",
-    "info": "Toz biber, acılı ve baharatlı yemeklerin vazgeçilmez bir parçasıdır ve lezzetli bir tat sunar.",
+    "content": "Taptaze toz biberimiz, yemeklerinize renk ve tat katmak için mükemmel bir seçimdir. Doğal ve katkısız toz biberimizle, yemeklerinize gerçek bir lezzet ekleyin. Bu baharat, yemeklerinizin hem görüntüsünü hem de tadını zenginleştirir.",
+    "info": "Kurutulmuş kırmızı biberlerin ince bir şekilde öğütülmesiyle elde edilen ve yemeklere yoğun renk ve tat katan bir baharattır. Türk mutfağında yaygın olarak kullanılan toz biber, genellikle acı ve tatlı olmak üzere iki ana çeşide sahiptir. Toz biber, çorbalar, soslar, et yemekleri ve sebze yemekleri gibi birçok yemekte lezzeti artırmak için kullanılır. Ayrıca, dolma ve sarma gibi geleneksel yemeklerin iç harcında da önemli bir bileşendir. Bu baharat, yemeklere sadece lezzet katmakla kalmaz, aynı zamanda metabolizmayı hızlandıran ve bağışıklık sistemini güçlendiren özelliklere sahiptir. İçerdiği yüksek miktarda C vitamini ve antioksidanlar sayesinde, vücudu serbest radikallerden korur ve genel sağlık durumunu iyileştirir.",
     "slug": "toz-biber"
   },
   {
     "title": "Beyaz Karabiber",
-    "info": "Beyaz karabiber, karabiber ailesinin hafif ve yumuşak lezzetli üyesidir ve birçok yemeğe ayrı bir tat katar.",
+    "info": "Siyah karabiberin olgunlaşmış ve kabuğu soyulmuş halidir. Daha hafif ve pürüzsüz bir tada sahip olan beyaz karabiber, özellikle hafif ve kremalı yemeklerde tercih edilir. Beyaz karabiber, balık, beyaz et, soslar ve çorbalar gibi yemeklerde yaygın olarak kullanılır. Ayrıca, beyaz renkli soslar ve yemeklerde siyah biberin bıraktığı koyu rengi istemeyenler için ideal bir alternatiftir. Bu baharat, lezzet katmanın yanı sıra, sindirimi kolaylaştırıcı ve antioksidan özelliklere sahiptir. Beyaz karabiber, bağırsak sağlığını destekler ve metabolizmayı hızlandırır. Ayrıca, içerdiği piperin maddesi sayesinde anti-inflamatuar etkisi bulunur.",
     "slug": "beyaz-karabiber"
   },
   {
     "title": "Sumak",
-    "info": "Sumak, Orta Doğu mutfağının vazgeçilmez bir baharatıdır ve yemeklere ekşimsi bir tat verir.",
+    "content": "Özenle toplanmış sumak, yemeklerinize hafif ekşi ve taze bir tat kazandırır. Salatalardan et yemeklerine kadar her türlü yemeğinize farklı bir dokunuş katacak. Sumak, özellikle salatalarda ve soğuk mezelerde yaygın olarak kullanılır.",
+    "info": "Ekşi ve ferahlatıcı tadıyla bilinen, Türk ve Orta Doğu mutfağının vazgeçilmez baharatlarından biridir. Küçük kırmızımsı meyvelerin kurutulup öğütülmesiyle elde edilen sumak, yemeklere karakteristik bir lezzet ve canlı bir renk katar. Sumak, özellikle salatalar, mezeler, et ve sebze yemeklerinde yaygın olarak kullanılır. Ayrıca, kebap ve lahmacun gibi yemeklerin üzerine serpilerek ekstra bir lezzet katılır. Bu baharat, yemeklere ekşi bir tat kazandırmanın yanı sıra, antioksidan ve anti-inflamatuar özelliklere sahiptir. Sumak, sindirimi kolaylaştırır, mide rahatsızlıklarını hafifletir.",
     "slug": "sumak"
   },
   {
+    "title": "Yedi Türlü",
+    "info": "Çeşitli baharatların bir araya gelmesiyle oluşan ve Türk mutfağında özellikle et yemeklerinde kullanılan bir karışımdır. Her bir baharatın kendine has aroması ve lezzeti ile yedi türlü, yemeklere zengin bir tat katmaktadır. Yedi türlü, kebaplar, güveçler, pilavlar ve tencere yemeklerinde sıkça kullanılır. Bu karışım, yemeklere derinlik katarak, her lokmada farklı bir lezzet deneyimi sunar. Bu baharat karışımı, sadece lezzet katmakla kalmaz, aynı zamanda sindirimi kolaylaştırıcı ve bağışıklık sistemini güçlendirici özelliklere sahiptir. Yedi türlü, içerdiği çeşitli baharatlar sayesinde vücudu serbest radikallerden korur ve genel sağlığı iyileştirir.",
+    "slug": "yedi-turlu"
+  },
+  {
     "title": "Köri",
-    "info": "Köri, Hint mutfağının en önemli baharatlarından biridir ve yemeklere ayrı bir lezzet katar.",
+    "info": "Hint mutfağının karakteristik baharat karışımlarından biridir. İçeriğinde zerdeçal, kimyon, kişniş, zencefil ve çeşitli diğer baharatlar bulunur. Köri, yemeklere yoğun bir aroma ve lezzet katar. Köri, özellikle tavuk yemekleri, sebze yemekleri, çorbalar ve soslarda kullanılır. Ayrıca, pilav ve makarna yemeklerine de eklenerek lezzetini artırır. Bu baharat karışımı, sadece lezzet katmakla kalmaz, aynı zamanda güçlü antioksidan ve anti-inflamatuar özelliklere sahiptir. Köri, bağışıklık sistemini destekler, sindirimi kolaylaştırır ve genel sağlığı iyileştirir. Ayrıca, metabolizmayı hızlandırarak kilo kontrolüne yardımcı olur.",
     "slug": "kori"
   },
   {
     "title": "Sarımsak Tozu",
-    "info": "Sarımsak tozu, yemeklere enfes bir sarımsak aroması ve lezzeti katar ve her çeşit yemeğe uygundur.",
+    "info": "Taze sarımsağın kurutulup öğütülmesiyle elde edilen bir baharattır. Keskin ve aromatik tadı ile yemeklere kolayca eklenebilen sarımsak tozu, mutfakta pratiklik sağlar. Sarımsak tozu, et yemekleri, soslar, çorbalar, marinadlar ve sebze yemeklerinde yaygın olarak kullanılır. Ayrıca, baharat karışımlarında ve atıştırmalık tariflerinde de tercih edilir. Bu baharat, yemeklere lezzet katmanın yanı sıra, antibakteriyel ve antioksidan özelliklere sahiptir. Sarımsak tozu, bağışıklık sistemini güçlendirir, kalp sağlığını destekler ve sindirimi kolaylaştırır. Ayrıca, doğal bir antibiyotik olarak bilinir.",
     "slug": "sarimsak-tozu"
   },
   {
     "title": "Hindistan Cevizi",
-    "info": "Hindistan cevizi, Hint mutfağının vazgeçilmez bir parçasıdır ve yemeklere eşsiz bir lezzet katar.",
+    "info": "Tatlı ve tropikal aroması ile bilinen, mutfakta geniş bir kullanım alanına sahip bir üründür. Taze, rendelenmiş, kurutulmuş veya süt olarak kullanılabilir. Hindistan cevizi, tatlılar, kekler, kurabiyeler ve smoothie'lerde yaygın olarak kullanılır. Ayrıca, Asya mutfağında köri ve çorbalarda da sıkça tercih edilir. Bu egzotik ürün, sadece lezzet katmakla kalmaz, aynı zamanda sağlığa birçok faydası vardır. Hindistan cevizi, bağışıklık sistemini güçlendirir, enerji verir ve cilt sağlığını destekler. Ayrıca, sindirimi kolaylaştırır ve metabolizmayı hızlandırır.",
     "slug": "hindistan-cevizi"
   },
   {
     "title": "İsot",
-    "info": "İsot, birçok farklı baharat karışımının vazgeçilmez bir parçasıdır ve yemeklere enfes bir aroma katar.",
+    "content": "Ünlü isotu, yemeklerinize derin ve zengin bir lezzet katmak için özenle seçilip işlenmiştir. Halis isotumuzla yemeklerinizi unutulmaz kılın. İsot, özellikle Güneydoğu mutfağında kendine özgü acı ve tatlı aromasıyla bilinir.",
+    "info": "Şanlıurfa'ya özgü, kurutulmuş kırmızı biberlerin özel bir yöntemle işlenmesiyle elde edilen ve Türk mutfağının benzersiz baharatlarından biridir. İsot, derin kırmızıdan siyaha kadar değişen rengi ve kendine has aromasıyla tanınır. İsot, özellikle kebaplar, çorbalar, soslar ve çeşitli et yemeklerinde yaygın olarak kullanılır. Şanlıurfa'nın meşhur çiğ köftesinin de olmazsa olmazıdır. Bu baharat, yemeklere hem renk hem de lezzet katarak, damaklarda unutulmaz bir tat bırakır. İsot, lezzet katmanın ötesinde, antioksidan ve metabolizmayı hızlandırıcı özelliklere sahiptir. Vücudu serbest radikallerden korur, bağışıklık sistemini güçlendirir ve sindirimi kolaylaştırır. Ayrıca, içerdiği kapsaisin maddesi sayesinde, ağrı kesici etkisi bulunur ve kilo kontrolüne yardımcı olur. 🌶",
     "slug": "isot"
   },
   {
     "title": "Köfte Baharatı",
-    "info": "Köfte baharatı, köftelere eşsiz bir lezzet katar ve her zaman tercih edilen bir karışımdır.",
+    "info": "Köftelere özel bir lezzet katmak için hazırlanan çeşitli baharatların karışımından oluşur. İçeriğinde genellikle kimyon, karabiber, kırmızı biber, kekik ve nane bulunur. Köfte baharatı, köftelerin yanı sıra, et yemekleri, kebaplar ve sebze yemeklerinde de kullanılabilir. Bu baharat karışımı, yemeklere zengin bir aroma ve tat katar. Köfte baharatı, sadece lezzet katmakla kalmaz, aynı zamanda sindirimi kolaylaştırıcı ve bağışıklık sistemini destekleyici özelliklere sahiptir. Yemeklerinizi lezzetlendirirken, sağlığınızı da destekler.",
     "slug": "kofte-baharati"
   },
   {
     "title": "İpek Pulbiber",
-    "info": "İpek pulbiber, yumuşak ve tatlı bir acılığa sahiptir ve yemeklere enfes bir tat katar.",
+    "info": "Adını kurutulduktan sonra ince ve dokusu itibariyle ipeksi bir yapıya sahip olmasından almaktadır. Bu özelliğiyle diğer pul biber çeşitlerinden ayırt edilir. İpek pul biber genellikle kırmızı renkte olup, Türk mutfağında özellikle Güneydoğu Anadolu Bölgesi'nde yaygın olarak kullanılmaktadır. İpek pul biber, acı bir tat ve hafif bir tatlılık içerebilir. Genellikle dolma, sarma, kebap ve çeşitli et yemeklerinde kullanılır. Ayrıca zeytinyağlı yemeklerde de tercih edilir. Bu biber çeşidi, yemeklere hoş bir renk ve lezzet katmanın yanı sıra, baharat olarak da kullanılır. İpek pul biberin öğütülüp toz haline getirilmiş versiyonları da bulunabilir ve bu şekilde baharat olarak da kullanılabilirler. İpek pul biber, Türk mutfağının zengin baharat çeşitliliğinde önemli bir yere sahiptir ve lezzetli yemeklerin vazgeçilmez bir bileşenidir.",
     "slug": "ipek-pulbiber"
   },
   {
     "title": "Yeni Bahar",
-    "info": "Yeni bahar, birçok farklı baharatın karışımıdır ve yemeklere enfes bir aroma ve lezzet katar.",
+    "info": "Adı gibi yenilikçi ve kompleks bir lezzete sahip olan bir baharattır. Tarçın, karanfil, muskat ve karabiber aromalarının birleşimini andıran yeni bahar, yemeklere derinlik katar. Yeni bahar, özellikle et yemekleri, köfte, çorbalar, soslar ve tatlılarda kullanılır. Ayrıca, dolma ve sarma gibi geleneksel yemeklerde de sıkça tercih edilir. Bu baharat, lezzet katmanın yanı sıra, sindirimi kolaylaştırıcı ve anti-inflamatuar özelliklere sahiptir. Yeni bahar, bağırsak sağlığını destekler ve bağışıklık sistemini güçlendirir. Aynı zamanda, doğal bir ağrı kesici olarak da bilinir ve vücudu serbest radikallerden korur.",
     "slug": "yeni-bahar"
   },
   {
     "title": "Tavuk Baharatı",
-    "info": "Tavuk baharatı, tavuk yemeklerine eşsiz bir lezzet katar ve her zaman tercih edilen bir karışımdır.",
+    "info": "Tavuğa özel lezzet katmak için hazırlanan, çeşitli baharatların karışımından oluşan bir blenddir. İçeriğinde genellikle sarımsak, soğan, kırmızı biber, kimyon, kekik ve tuz bulunur. Tavuk baharatı, tavuk etiyle yapılan her türlü yemekte kullanılır. Fırında, ızgarada veya tavada pişirilen tavuk yemeklerinde, marinasyon işlemlerinde ve soslarda sıklıkla tercih edilir. Bu baharat karışımı, yemeklere sadece lezzet katmakla kalmaz, aynı zamanda sindirimi kolaylaştırıcı ve bağışıklık sistemini güçlendirici özelliklere sahiptir. Tavuk baharatı, yemeklerinizi lezzetlendirirken sağlığınızı da destekler.",
     "slug": "tavuk-baharati"
   },
   {
+    "title": "Kajun",
+    "info": "Amerikan mutfağının karakteristik lezzetlerinden biridir. İçeriğinde genellikle paprika, sarımsak tozu, soğan tozu, kekik, karabiber ve acı biber bulunur. Kajun baharatı, özellikle et yemekleri, deniz ürünleri, sebzeler ve patates kızartmalarında kullanılır. Cajun tavuk ve cajun karides gibi tariflerde sıkça tercih edilir. Bu baharat karışımı, yemeklere yoğun bir aroma ve hafif bir acılık katar. Ayrıca, antioksidan ve anti-inflamatuar özellikleri ile bilinir. Kajun baharatı, bağışıklık sistemini güçlendirir, sindirimi destekler ve metabolizmayı hızlandırır.",
+    "slug": "kajun"
+  },
+  {
     "title": "Limon Tuzu",
-    "info": "Limon tuzu, yemeklere ferahlık ve tazelik katar ve birçok yemeğe eşsiz bir tat verir.",
+    "info": "Limonun doğal asidik yapısını içeren kristalize bir maddedir. Keskin ve ekşi tadı ile yemeklere taze bir aroma katar. Limon tuzu, özellikle turşular, salatalar, soslar ve deniz ürünleri yemeklerinde kullanılır. Ayrıca, bazı tatlı ve içecek tariflerinde de tercih edilir. Bu baharat, yemeklere ekşi bir tat kazandırmanın yanı sıra, sindirimi kolaylaştırıcı ve bağışıklık sistemini destekleyici özelliklere sahiptir. Limon tuzu, yemeklerin lezzetini artırırken sağlığınıza da katkıda bulunur.",
     "slug": "limon-tuzu"
   },
   {
     "title": "Kurutmalık Biber",
-    "info": "Kurutmalık biber, acılı ve baharatlı yemeklerin olmazsa olmazıdır ve enfes bir tat sunar.",
+    "info": "Yaz aylarında toplanan taze biberlerin doğal yöntemlerle kurutulmasıyla elde edilen bir üründür. Kurutma işlemi, biberlerin lezzetini yoğunlaştırır ve uzun süre saklanmalarını sağlar. Kurutmalık biber, dolma, sarma ve güveç gibi geleneksel Türk yemeklerinde yaygın olarak kullanılır. Bu biberler, yemeklere zengin bir aroma ve hafif bir acılık katarak lezzetini artırır. Kurutmalık biber, sadece lezzet katmakla kalmaz, aynı zamanda vitamin ve mineral bakımından zengindir. Bağışıklık sistemini güçlendirir, sindirimi destekler ve genel sağlığa katkıda bulunur. İçerdiği antioksidanlar sayesinde, vücudu serbest radikallerden korur ve bağışıklığı artırır.",
     "slug": "kurutmalik-biber"
   },
   {
     "title": "Kurutmalık Patlıcan",
-    "info": "Kurutmalık patlıcan, birçok yemeğe enfes bir lezzet ve aroma katar ve mutfaklarda vazgeçilmezdir.",
+    "info": "Yaz aylarında toplanan taze patlıcanların dilimlenip doğal yöntemlerle kurutulmasıyla elde edilen bir üründür. Kurutma işlemi, patlıcanların lezzetini yoğunlaştırır ve uzun süre saklanmalarını sağlar. Kurutmalık patlıcan, dolma, sarma ve güveç gibi geleneksel Türk yemeklerinde yaygın olarak kullanılır. Bu patlıcanlar, yemeklere derin bir aroma ve zengin bir tat katarak lezzetini artırır. Kurutmalık patlıcan, sadece lezzet katmakla kalmaz, aynı zamanda lif, vitamin ve mineral bakımından zengindir. Bağışıklık sistemini güçlendirir, sindirimi destekler ve genel sağlığa katkıda bulunur. Ayrıca, düşük kalorili olması nedeniyle diyetlerde de tercih edilir.",
     "slug": "kurutmalik-patlican"
   }
 ]

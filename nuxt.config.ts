@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  modules: ["@nuxt/image", "@nuxt/icon"],
+  modules: ["@nuxt/image", "@nuxt/icon", "nuxt-swiper"],
   css: ["~/assets/scss/theme.scss"],
 
   app: {

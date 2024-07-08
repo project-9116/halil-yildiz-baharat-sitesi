@@ -6,16 +6,40 @@
       </header>
       <section>
         <div class="product-image-container">
-            <NuxtImg
-              :src="`/tekil/${currentProduct.slug}.png`"
-              class="product-image"
-            />
+          <Swiper
+            style="border-radius: 15px"
+            :modules="[SwiperAutoplay, SwiperPagination]"
+            :autoplay="{
+              delay: 3500,
+              disableOnInteraction: true,
+            }"
+          >
+            <SwiperSlide>
+              <NuxtImg
+                :src="`/tekil/${currentProduct.slug}.png`"
+                class="product-image"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <NuxtImg src="/pulbiber/mutfakta.jpg" class="product-image" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <NuxtImg src="/pulbiber/tahtada1.jpg" class="product-image" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <NuxtImg src="/pulbiber/tahtada3.jpg" class="product-image" />
+            </SwiperSlide>
+          </Swiper>
+        </div>
+
+        <div v-if="currentProduct.content" class="product-info">
+          <p>{{ currentProduct.content }}</p>
         </div>
         <div class="product-info">
-            <p>{{ currentProduct.info }}</p>
+          <p>{{ currentProduct.info }}</p>
         </div>
       </section>
-      <div class="product-detail-wrapper">
+      <!-- <div class="product-detail-wrapper">
         <div class="product-detail">
           <div class="other-photos">
             <NuxtImg src="/pulbiber/mutfakta.jpg" class="product-thumbnail" />
@@ -24,32 +48,8 @@
             <NuxtImg src="/pulbiber/tahtada3.jpg" class="product-thumbnail" />
           </div>
         </div>
-
-
-
-        <div v-if="recommendedProducts" class="product-grid">
-          <header>
-            <h1>Diğer Ürünler</h1>
-          </header>
-        <div class="card-x" v-for="product in recommendedProducts" :key="product.title">
-          <div class="left">
-            <div class="box"></div>
-          </div>
-          <div class="right">
-            <div class="box">
-              <div class="box-img">
-                <NuxtLink :to="`/${product.slug}`">
-                  <NuxtImg :src="`/tekil/${product.slug}.png`" alt="..." />
-                </NuxtLink>
-              </div>
-              <div class="box-detail">
-                <h1>{{ product.title }}</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
+      </div> -->
+      <SingleOthers />
     </div>
     <div class="container" v-else>
       <h1>Yükleniyor...</h1>
@@ -150,8 +150,6 @@ onMounted(async () => {
 .product-info {
   text-align: center;
 }
-
-
 
 @media (max-width: 768px) {
   .product-detail-wrapper {
