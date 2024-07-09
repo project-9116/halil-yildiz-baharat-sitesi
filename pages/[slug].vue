@@ -1,25 +1,13 @@
 <template>
   <div class="page-content">
-    <div v-if="currentProduct" class="container">
-      <header>
-        <h1>{{ currentProduct.title }}</h1>
-      </header>
-      <section>
-        <div class="product-image-container">
+    <div class="product-image-container" style="  margin-bottom: -35px;">
           <Swiper
-            style="border-radius: 15px"
             :modules="[SwiperAutoplay, SwiperPagination]"
             :autoplay="{
               delay: 3500,
               disableOnInteraction: true,
             }"
           >
-            <SwiperSlide>
-              <NuxtImg
-                :src="`/tekil/${currentProduct.slug}.png`"
-                class="product-image"
-              />
-            </SwiperSlide>
             <SwiperSlide>
               <NuxtImg src="/pulbiber/mutfakta.jpg" class="product-image" />
             </SwiperSlide>
@@ -31,7 +19,13 @@
             </SwiperSlide>
           </Swiper>
         </div>
+    <div v-if="currentProduct" class="container">
 
+      <section>
+        
+        <header>
+        <h1>{{ currentProduct.title }}</h1>
+      </header>        
         <div v-if="currentProduct.content" class="product-info">
           <p>{{ currentProduct.content }}</p>
         </div>
