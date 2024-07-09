@@ -12,8 +12,6 @@
       <!-- TODO: sayfa yenilendiginde yeteri kadar sure gecmediyse degismesin
       urunler. -->
 
-
-
       <HomeSlogans />
 
       <HomeProducts />
@@ -26,14 +24,17 @@
         </header>
         <section>
           <p>
-            İstanbul'un bağrında baharat dünyasına adanmış bir işletmeyiz. Bildik bir deyiş ile bir baharatçıyız.
-            Tarladan sofraya kadar olan yolculukta, niteliği ve özeni hep gözetip koruyoruz.
-            Size en iyisini sunmak için çalışıyoruz.
+            İstanbul'un bağrında baharat dünyasına adanmış bir işletmeyiz.
+            Bildik bir deyiş ile bir baharatçıyız. Tarladan sofraya kadar olan
+            yolculukta, niteliği ve özeni hep gözetip koruyoruz. Size en iyisini
+            sunmak için çalışıyoruz.
           </p>
         </section>
         <footer>
-          <NuxtLink to="/hakkimizda" class="button">Hepsini okumak için tıklayınız.</NuxtLink>
-        </footer>        
+          <NuxtLink to="/hakkimizda" class="button"
+            >Hepsini okumak için tıklayınız.</NuxtLink
+          >
+        </footer>
       </div>
 
       <HomeClients />
