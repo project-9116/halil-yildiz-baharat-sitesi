@@ -8,12 +8,28 @@
         />
         <NuxtImg src="/musteriler/mahsunusta.png" class="client-thumbnail" />
         <NuxtImg src="/musteriler/manticizade.png" class="client-thumbnail" />
+        <NuxtImg
+          style="background-color: lightslategray; padding: 4px 4px"
+          src="/musteriler/ozguryemek.png"
+          class="client-thumbnail"
+        />
         <NuxtImg src="/musteriler/ongroup.jpg" class="client-thumbnail" />
+        <NuxtImg
+          style="scale: 1.4"
+          src="/musteriler/kervansaray.png"
+          class="client-thumbnail"
+        />
         <NuxtImg src="/musteriler/sonmezet.webp" class="client-thumbnail" />
+        <NuxtImg src="/musteriler/zazanin-yeri.png" class="client-thumbnail" />
         <NuxtImg src="/musteriler/manticizade.png" class="client-thumbnail" />
         <NuxtImg src="/musteriler/mahsunusta.png" class="client-thumbnail" />
         <NuxtImg src="/musteriler/sonmezet.webp" class="client-thumbnail" />
-        <NuxtImg src="/musteriler/ongroup.jpg" class="client-thumbnail" />
+        <NuxtImg
+          style="scale: 1.4"
+          src="/musteriler/ongroup.jpg"
+          class="client-thumbnail"
+        />
+        <NuxtImg src="/musteriler/kervansaray.png" class="client-thumbnail" />
       </div>
     </div>
   </div>
