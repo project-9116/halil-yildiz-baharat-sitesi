@@ -6,6 +6,8 @@
           src="/musteriler/efsanekadroyemekcilik.jpg"
           class="client-thumbnail"
         />
+        <NuxtImg src="/musteriler/yediden.png" class="client-thumbnail" />
+
         <NuxtImg src="/musteriler/mahsunusta.png" class="client-thumbnail" />
         <NuxtImg src="/musteriler/manticizade.png" class="client-thumbnail" />
         <NuxtImg
