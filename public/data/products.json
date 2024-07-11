@@ -74,7 +74,7 @@
   {
     "title": "İsot",
     "content": "Ünlü isotu, yemeklerinize derin ve zengin bir lezzet katmak için özenle seçilip işlenmiştir. Halis isotumuzla yemeklerinizi unutulmaz kılın. İsot, özellikle Güneydoğu mutfağında kendine özgü acı ve tatlı aromasıyla bilinir.",
-    "info": "Şanlıurfa'ya özgü, kurutulmuş kırmızı biberlerin özel bir yöntemle işlenmesiyle elde edilen ve Türk mutfağının benzersiz baharatlarından biridir. İsot, derin kırmızıdan siyaha kadar değişen rengi ve kendine has aromasıyla tanınır. İsot, özellikle kebaplar, çorbalar, soslar ve çeşitli et yemeklerinde yaygın olarak kullanılır. Şanlıurfa'nın meşhur çiğ köftesinin de olmazsa olmazıdır. Bu baharat, yemeklere hem renk hem de lezzet katarak, damaklarda unutulmaz bir tat bırakır. İsot, lezzet katmanın ötesinde, antioksidan ve metabolizmayı hızlandırıcı özelliklere sahiptir. Vücudu serbest radikallerden korur, bağışıklık sistemini güçlendirir ve sindirimi kolaylaştırır. Ayrıca, içerdiği kapsaisin maddesi sayesinde, ağrı kesici etkisi bulunur ve kilo kontrolüne yardımcı olur. 🌶",
+    "info": "Şanlıurfa'ya özgü, kurutulmuş kırmızı biberlerin özel bir yöntemle işlenmesiyle elde edilen ve Türk mutfağının benzersiz baharatlarından biridir. İsot, derin kırmızıdan siyaha kadar değişen rengi ve kendine has aromasıyla tanınır. İsot, özellikle kebaplar, çorbalar, soslar ve çeşitli et yemeklerinde yaygın olarak kullanılır. Şanlıurfa'nın meşhur çiğ köftesinin de olmazsa olmazıdır. Bu baharat, yemeklere hem renk hem de lezzet katarak, damaklarda unutulmaz bir tat bırakır. İsot, lezzet katmanın ötesinde, antioksidan ve metabolizmayı hızlandırıcı özelliklere sahiptir. Vücudu serbest radikallerden korur, bağışıklık sistemini güçlendirir ve sindirimi kolaylaştırır. Ayrıca, içerdiği kapsaisin maddesi sayesinde, ağrı kesici etkisi bulunur ve kilo kontrolüne yardımcı olur.",
     "slug": "isot"
   },
   {
@@ -104,22 +104,27 @@
   },
   {
     "title": "Yağlı Biber",
-    "info": "Yaz aylarında toplanan taze patlıcanların dilimlenip doğal yöntemlerle kurutulmasıyla elde edilen bir üründür. Kurutma işlemi, patlıcanların lezzetini yoğunlaştırır ve uzun süre saklanmalarını sağlar. Kurutmalık patlıcan, dolma, sarma ve güveç gibi geleneksel Türk yemeklerinde yaygın olarak kullanılır. Bu patlıcanlar, yemeklere derin bir aroma ve zengin bir tat katarak lezzetini artırır. Kurutmalık patlıcan, sadece lezzet katmakla kalmaz, aynı zamanda lif, vitamin ve mineral bakımından zengindir. Bağışıklık sistemini güçlendirir, sindirimi destekler ve genel sağlığa katkıda bulunur. Ayrıca, düşük kalorili olması nedeniyle diyetlerde de tercih edilir.",
+    "info": "YAZILACAK",
     "slug": "yagli_biber"
   },
   {
     "title": "Yağlı Pulbiber",
-    "info": "Yaz aylarında toplanan taze patlıcanların dilimlenip doğal yöntemlerle kurutulmasıyla elde edilen bir üründür. Kurutma işlemi, patlıcanların lezzetini yoğunlaştırır ve uzun süre saklanmalarını sağlar. Kurutmalık patlıcan, dolma, sarma ve güveç gibi geleneksel Türk yemeklerinde yaygın olarak kullanılır. Bu patlıcanlar, yemeklere derin bir aroma ve zengin bir tat katarak lezzetini artırır. Kurutmalık patlıcan, sadece lezzet katmakla kalmaz, aynı zamanda lif, vitamin ve mineral bakımından zengindir. Bağışıklık sistemini güçlendirir, sindirimi destekler ve genel sağlığa katkıda bulunur. Ayrıca, düşük kalorili olması nedeniyle diyetlerde de tercih edilir.",
+    "info": "YAZILACAK",
     "slug": "yagli_pulbiber"
   },
   {
+    "title": "Çörek Otu",
+    "info": "YAZILACAK",
+    "slug": "corek_otu"
+  },
+  {
     "title": "Kurutmalık Biber",
-    "info": "Yaz aylarında toplanan taze biberlerin doğal yöntemlerle kurutulmasıyla elde edilen bir üründür. Kurutma işlemi, biberlerin lezzetini yoğunlaştırır ve uzun süre saklanmalarını sağlar. Kurutmalık biber, dolma, sarma ve güveç gibi geleneksel Türk yemeklerinde yaygın olarak kullanılır. Bu biberler, yemeklere zengin bir aroma ve hafif bir acılık katarak lezzetini artırır. Kurutmalık biber, sadece lezzet katmakla kalmaz, aynı zamanda vitamin ve mineral bakımından zengindir. Bağışıklık sistemini güçlendirir, sindirimi destekler ve genel sağlığa katkıda bulunur. İçerdiği antioksidanlar sayesinde, vücudu serbest radikallerden korur ve bağışıklığı artırır.",
+    "info": "Mevsiminde toplanan taze biberlerin doğal yöntemlerle kurutulmasıyla elde edilen bir üründür. Kurutma işlemi, biberlerin lezzetini yoğunlaştırır ve uzun süre saklanmalarını sağlar. Kurutmalık biber, dolma, sarma ve güveç gibi geleneksel Türk yemeklerinde yaygın olarak kullanılır. Bu biberler, yemeklere zengin bir aroma ve hafif bir acılık katarak lezzetini artırır. Kurutmalık biber, sadece lezzet katmakla kalmaz, aynı zamanda vitamin ve mineral bakımından zengindir. Bağışıklık sistemini güçlendirir, sindirimi destekler ve genel sağlığa katkıda bulunur. İçerdiği antioksidanlar sayesinde, vücudu serbest radikallerden korur ve bağışıklığı artırır.",
     "slug": "kurutmaliklar"
   },
   {
     "title": "Kurutmalık Patlıcan",
-    "info": "Yaz aylarında toplanan taze patlıcanların dilimlenip doğal yöntemlerle kurutulmasıyla elde edilen bir üründür. Kurutma işlemi, patlıcanların lezzetini yoğunlaştırır ve uzun süre saklanmalarını sağlar. Kurutmalık patlıcan, dolma, sarma ve güveç gibi geleneksel Türk yemeklerinde yaygın olarak kullanılır. Bu patlıcanlar, yemeklere derin bir aroma ve zengin bir tat katarak lezzetini artırır. Kurutmalık patlıcan, sadece lezzet katmakla kalmaz, aynı zamanda lif, vitamin ve mineral bakımından zengindir. Bağışıklık sistemini güçlendirir, sindirimi destekler ve genel sağlığa katkıda bulunur. Ayrıca, düşük kalorili olması nedeniyle diyetlerde de tercih edilir.",
+    "info": "Mevsiminde toplanan taze patlıcanların dilimlenip doğal yöntemlerle kurutulmasıyla elde edilen bir üründür. Kurutma işlemi, patlıcanların lezzetini yoğunlaştırır ve uzun süre saklanmalarını sağlar. Kurutmalık patlıcan, dolma, sarma ve güveç gibi geleneksel Türk yemeklerinde yaygın olarak kullanılır. Bu patlıcanlar, yemeklere derin bir aroma ve zengin bir tat katarak lezzetini artırır. Kurutmalık patlıcan, sadece lezzet katmakla kalmaz, aynı zamanda lif, vitamin ve mineral bakımından zengindir. Bağışıklık sistemini güçlendirir, sindirimi destekler ve genel sağlığa katkıda bulunur. Ayrıca, düşük kalorili olması nedeniyle diyetlerde de tercih edilir.",
     "slug": "kurutmaliklar"
   }
 ]

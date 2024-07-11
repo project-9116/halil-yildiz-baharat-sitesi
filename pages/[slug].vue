@@ -1,31 +1,27 @@
 <template>
   <div class="page-content">
-    <div class="product-image-container" style="  margin-bottom: -35px;">
-          <Swiper
-            :modules="[SwiperAutoplay, SwiperPagination]"
-            :autoplay="{
-              delay: 3500,
-              disableOnInteraction: true,
-            }"
-          >
-            <SwiperSlide>
-              <NuxtImg src="/pulbiber/mutfakta.jpg" class="product-image" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <NuxtImg src="/pulbiber/tahtada1.jpg" class="product-image" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <NuxtImg src="/pulbiber/tahtada3.jpg" class="product-image" />
-            </SwiperSlide>
-          </Swiper>
-        </div>
+    <div class="product-image-container" style="margin-bottom: -35px">
+      <Swiper
+        v-if="photos.length > 0"
+        :modules="[SwiperAutoplay, SwiperPagination]"
+        :autoplay="{
+          delay: 4000,
+          disableOnInteraction: true,
+        }"
+      >
+        <SwiperSlide v-for="photo in photos" :key="photo.url">
+          <NuxtImg :src="photo.url" loading="lazy" :alt="photo.name" />
+        </SwiperSlide>
+      </Swiper>
+      <div v-else>
+        <h1>Yükleniyor...</h1>
+      </div>
+    </div>
     <div v-if="currentProduct" class="container">
-
       <section>
-        
         <header>
-        <h1>{{ currentProduct.title }}</h1>
-      </header>        
+          <h1>{{ currentProduct.title }}</h1>
+        </header>
         <div v-if="currentProduct.content" class="product-info">
           <p>{{ currentProduct.content }}</p>
         </div>
@@ -33,16 +29,6 @@
           <p>{{ currentProduct.info }}</p>
         </div>
       </section>
-      <!-- <div class="product-detail-wrapper">
-        <div class="product-detail">
-          <div class="other-photos">
-            <NuxtImg src="/pulbiber/mutfakta.jpg" class="product-thumbnail" />
-            <NuxtImg src="/pulbiber/tahtada1.jpg" class="product-thumbnail" />
-            <NuxtImg src="/pulbiber/tahtada2.jpg" class="product-thumbnail" />
-            <NuxtImg src="/pulbiber/tahtada3.jpg" class="product-thumbnail" />
-          </div>
-        </div>
-      </div> -->
       <SingleOthers />
     </div>
     <div class="container" v-else>
@@ -54,30 +40,70 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import { useRoute } from "vue-router";
+import { useNuxtApp } from "#app";
 
+const { $supabase } = useNuxtApp();
 const currentProduct = ref(null);
 const recommendedProducts = ref([]);
-
+const photos = ref([]);
 const route = useRoute();
 
-onMounted(async () => {
+const getSignedUrl = async (path) => {
+  try {
+    const { data, error } = await $supabase.storage
+      .from("fotograflar")
+      .createSignedUrl(path, 60 * 60); // URL geçerliliği 1 saat
+    if (error) throw error;
+    return data.signedUrl;
+  } catch (error) {
+    console.error("Error creating signed URL: ", error.message);
+    return null;
+  }
+};
+
+const fetchProductData = async () => {
   try {
     const response = await fetch("/data/products.json");
-    if (!response.ok) {
-      throw new Error("Network response was not ok");
-    }
+    if (!response.ok) throw new Error("Network response was not ok");
     const products = await response.json();
 
     const slug = route.params.slug;
     currentProduct.value = products.find((product) => product.slug === slug);
-
-    // Filter out the current product to get recommended products
     recommendedProducts.value = products.filter(
       (product) => product.slug !== slug
     );
   } catch (error) {
     console.error("Veri çekme hatası: ", error);
   }
+};
+
+const fetchProductPhotos = async () => {
+  const slug = route.params.slug;
+  try {
+    const { data, error } = await $supabase.storage
+      .from("fotograflar")
+      .list(`urunler/${slug}`, {
+        limit: 100, // Fotoğraf sayısına göre limit ayarlayabilirsiniz
+        sortBy: { column: "name", order: "asc" },
+      });
+
+    if (error) throw error;
+
+    const urls = await Promise.all(
+      data.map(async (file) => {
+        const url = await getSignedUrl(`urunler/${slug}/${file.name}`);
+        return { name: file.name, url };
+      })
+    );
+    photos.value = urls.filter((url) => url.url !== null);
+  } catch (error) {
+    console.error("Error listing images: ", error.message);
+  }
+};
+
+onMounted(async () => {
+  await fetchProductData();
+  await fetchProductPhotos();
 });
 </script>
 

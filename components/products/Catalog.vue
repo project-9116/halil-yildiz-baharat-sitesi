@@ -1,15 +1,19 @@
 <template>
   <div>
     <div v-if="catalog.length > 0" class="product-grid">
-      <div class="card-x" v-for="product in photos" :key="product.slug">
+      <div class="card-x" v-for="product in photos" :key="product.name">
         <div class="left">
           <div class="box"></div>
         </div>
         <div class="right">
           <div class="box">
             <div class="box-img">
-              <NuxtLink :to="'/' + product.slug">
-                <NuxtImg :src="product.url" alt="..." loading="lazy" />
+              <NuxtLink :to="`/${product.name}`">
+                <NuxtImg
+                  :src="product.url"
+                  :alt="product.name"
+                  loading="lazy"
+                />
               </NuxtLink>
             </div>
             <div class="box-detail">
@@ -24,20 +28,16 @@
 
 <script setup>
 import { ref, onMounted } from "vue";
-import { createClient } from "@supabase/supabase-js";
+import { useNuxtApp } from "#app";
 
-const supabaseUrl = "https://lmhnvhaprafszwpvstge.supabase.co";
-const supabaseKey =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxtaG52aGFwcmFmc3p3cHZzdGdlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTk2NjAwNzgsImV4cCI6MjAzNTIzNjA3OH0.7ZgJqoJlJbl86WV4SoyZnJT_CuC_I57aTkybv-qQ2e0";
-
-const supabase = createClient(supabaseUrl, supabaseKey);
+const { $supabase } = useNuxtApp();
 
 const catalog = ref([]);
 const photos = ref([]);
 
 const getSignedUrl = async (path) => {
   try {
-    const { data, error } = await supabase.storage
+    const { data, error } = await $supabase.storage
       .from("fotograflar")
       .createSignedUrl(path, 60 * 60); // URL geçerliliği 1 saat
     if (error) throw error;
@@ -58,6 +58,7 @@ const listAllImages = async () => {
       })
     );
     photos.value = urls.filter((url) => url.url !== null);
+    console.log("photos ", photos.value);
   } catch (error) {
     console.error("Error listing images: ", error.message);
   }
