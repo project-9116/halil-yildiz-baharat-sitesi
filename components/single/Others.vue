@@ -1,12 +1,11 @@
 <template>
-  <div v-if="recommendedProducts" class="product-grid">
-    <header>
-      <h1>Diğer Ürünler</h1>
-    </header>
+  <div class="home-products">
+    <h2>Birkaç ürünümüz</h2>
     <div
+      v-if="theProducts.length <= 4"
+      v-for="item in theProducts"
+      :key="item.slug"
       class="card-x"
-      v-for="product in recommendedProducts"
-      :key="product.title"
     >
       <div class="left">
         <div class="box"></div>
@@ -14,45 +13,75 @@
       <div class="right">
         <div class="box">
           <div class="box-img">
-            <NuxtLink :to="`/${product.slug}`">
-              <NuxtImg :src="`/tekil/${product.slug}.png`" alt="..." />
+            <NuxtLink :to="`/${item.slug}`">
+              <NuxtImg :src="item.url" loading="lazy" alt="..." />
             </NuxtLink>
           </div>
           <div class="box-detail">
-            <h1>{{ product.title }}</h1>
+            <h1>{{ item.title }}</h1>
           </div>
         </div>
       </div>
     </div>
+
+    <TheLoading v-else />
+
+    <NuxtLink class="button primary-button" to="/urunler"
+      >Diğer ürünler</NuxtLink
+    >
   </div>
 </template>
 
 <script setup>
 import { ref, onMounted } from "vue";
-import { useRoute } from "vue-router";
+import { useNuxtApp } from "#app";
 
-const recommendedProducts = ref([]);
+const { $supabase } = useNuxtApp();
 
-const route = useRoute();
+const theProducts = ref([
+  { title: "İsot", slug: "isot", url: "" },
+  { title: "Karabiber", slug: "karabiber", url: "" },
+  { title: "Kekik", slug: "kekik", url: "" },
+  { title: "Kimyon", slug: "kimyon", url: "" },
+  { title: "Nane", slug: "nane", url: "" },
+  { title: "Pul Biber", slug: "pulbiber", url: "" },
+  { title: "Toz Biber", slug: "tozbiber", url: "" },
+]);
+
+const getSignedUrl = async (path) => {
+  const { data, error } = await $supabase.storage
+    .from("fotograflar")
+    .createSignedUrl(path, 60 * 60); // URL geçerliliği 1 saat
+  if (error) {
+    console.error(`Error creating signed URL for ${path}: `, error.message);
+    return null;
+  }
+  return data.signedUrl;
+};
+
+const listRandomImages = async () => {
+  // Rastgele 3 ürün seç
+  const randomProducts = theProducts.value
+    .sort(() => 0.5 - Math.random())
+    .slice(0, 4);
+
+  // Seçilen ürünler için imzalı URL'leri oluştur
+  await Promise.all(
+    randomProducts.map(async (product) => {
+      const url = await getSignedUrl(`oncelikliler/${product.slug}.png`);
+      product.url = url ? url : "";
+    })
+  );
+
+  // Diziyi seçilen ürünlerle güncelle
+  theProducts.value = randomProducts.filter((product) => product.url !== "");
+};
 
 onMounted(async () => {
   try {
-    const response = await fetch("/data/products.json");
-    if (!response.ok) {
-      throw new Error("Network response was not ok");
-    }
-    const products = await response.json();
-
-    const slug = route.params.slug;
-
-    // Filter out the current product to get recommended products
-    recommendedProducts.value = products.filter(
-      (product) => product.slug !== slug
-    );
-
-    recommendedProducts.value = recommendedProducts.value.splice(0, 5);
+    await listRandomImages();
   } catch (error) {
-    console.error("Veri çekme hatası: ", error);
+    console.error("Error in onMounted: ", error.message);
   }
 });
 </script>

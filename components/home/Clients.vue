@@ -5,37 +5,96 @@
         <NuxtImg
           src="/musteriler/efsanekadroyemekcilik.jpg"
           class="client-thumbnail"
+          format="webp"
+          quality="80"
+          loading="lazy"
         />
-        <NuxtImg src="/musteriler/yediden.png" class="client-thumbnail" />
-
-        <NuxtImg src="/musteriler/mahsunusta.png" class="client-thumbnail" />
-        <NuxtImg src="/musteriler/manticizade.png" class="client-thumbnail" />
         <NuxtImg
-          style="background-color: lightslategray; padding: 4px 4px"
-          src="/musteriler/ozguryemek.png"
-          class="client-thumbnail"
-        />
-        <NuxtImg src="/musteriler/ongroup.jpg" class="client-thumbnail" />
-        <NuxtImg
-          style="scale: 1.4"
           src="/musteriler/kervansaray.png"
           class="client-thumbnail"
+          format="webp"
+          quality="80"
+          loading="lazy"
         />
-        <NuxtImg src="/musteriler/sonmezet.webp" class="client-thumbnail" />
-        <NuxtImg src="/musteriler/zazanin-yeri.png" class="client-thumbnail" />
-        <NuxtImg src="/musteriler/manticizade.png" class="client-thumbnail" />
-        <NuxtImg src="/musteriler/mahsunusta.png" class="client-thumbnail" />
-        <NuxtImg src="/musteriler/sonmezet.webp" class="client-thumbnail" />
         <NuxtImg
-          style="scale: 1.4"
+          src="/musteriler/mahsunusta.png"
+          class="client-thumbnail"
+          format="webp"
+          quality="80"
+          loading="lazy"
+        />
+        <NuxtImg
+          src="/musteriler/manticizade.png"
+          class="client-thumbnail"
+          format="webp"
+          quality="80"
+          loading="lazy"
+        />
+        <NuxtImg
           src="/musteriler/ongroup.jpg"
           class="client-thumbnail"
+          format="webp"
+          quality="80"
+          loading="lazy"
         />
-        <NuxtImg src="/musteriler/kervansaray.png" class="client-thumbnail" />
+        <NuxtImg
+          src="/musteriler/ozguryemek.png"
+          class="client-thumbnail"
+          format="webp"
+          quality="80"
+          loading="lazy"
+        />
+        <NuxtImg
+          src="/musteriler/sonmezet.webp"
+          class="client-thumbnail"
+          format="webp"
+          quality="80"
+          loading="lazy"
+        />
+        <NuxtImg
+          src="/musteriler/yediden.png"
+          class="client-thumbnail"
+          format="webp"
+          quality="80"
+          loading="lazy"
+        />
+        <NuxtImg
+          src="/musteriler/zazanin-yeri.png"
+          class="client-thumbnail"
+          format="webp"
+          quality="80"
+          loading="lazy"
+        />
       </div>
     </div>
   </div>
 </template>
+
+<script setup>
+import { onMounted } from "vue";
+
+const startScrolling = () => {
+  const scrollArea = document.querySelector(".clients-scroll");
+  const scrollSpeed = 1.3; // Kaydırma hızı
+  let scrollPos = 0;
+
+  const scroll = () => {
+    scrollPos -= scrollSpeed;
+    if (Math.abs(scrollPos) >= scrollArea.scrollWidth / 2) {
+      scrollPos = 0; // Sonsuz döngü için sıfırla
+    }
+    scrollArea.style.transform = `translateX(${scrollPos}px)`;
+    requestAnimationFrame(scroll);
+  };
+
+  scrollArea.innerHTML += scrollArea.innerHTML; // Sonsuz döngü için içerikleri iki katına çıkar
+  requestAnimationFrame(scroll);
+};
+
+onMounted(() => {
+  startScrolling();
+});
+</script>
 
 <style>
 .clients-showcase {
@@ -54,6 +113,7 @@
 
 .clients-scroll {
   display: flex;
+
   gap: 45px;
   padding: 20px;
   align-items: center;
@@ -102,41 +162,3 @@
   }
 }
 </style>
-
-<script>
-export default {
-  mounted() {
-    this.startScrolling();
-  },
-  methods: {
-    startScrolling() {
-      const scrollArea = document.querySelector(".clients-scroll");
-      const scrollSpeed = 1.3; // Kaydırma hızı
-      const reverseScrollSpeed = 20; // Ters yön kaydırma hızı
-      let scrollPos = 0;
-      let direction = "forward";
-
-      const scroll = () => {
-        if (direction === "forward") {
-          scrollPos -= scrollSpeed;
-          if (Math.abs(scrollPos) >= scrollArea.scrollWidth / 2) {
-            direction = "reverse";
-          }
-        } else if (direction === "reverse") {
-          scrollPos += reverseScrollSpeed;
-          if (scrollPos >= 0) {
-            direction = "forward";
-            scrollPos = 0; // Sonsuz döngü için sıfırla
-          }
-        }
-        scrollArea.style.transition = "transform 0.1s linear";
-        scrollArea.style.transform = `translateX(${scrollPos}px)`;
-        requestAnimationFrame(scroll);
-      };
-
-      scrollArea.innerHTML += scrollArea.innerHTML; // Sonsuz döngü için içerikleri iki katına çıkar
-      requestAnimationFrame(scroll);
-    },
-  },
-};
-</script>

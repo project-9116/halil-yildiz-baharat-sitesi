@@ -1,31 +1,35 @@
 <template>
   <section class="spice-section">
-    <div class="spice-card">
-      <NuxtImg src="/konsept/konsept2.jpg" class="spice-image" />
-      <h3>Önce İnsan</h3>
+    <div class="spice-card" v-for="(item, index) in slogans" :key="item.title">
+      <NuxtImg :src="`/konsept/konsept${index + 1}.jpg`" class="spice-image" />
+
+      <h3>{{ item.title }}</h3>
       <p>
-        Tarımdan üretime, üretimden satışa, dağıtımdan son kullanıcıya kadar
-        emek veren tüm kaynaklarımız Tufan Baharat ailesini oluşturmaktadır.
-      </p>
-    </div>
-    <div class="spice-card">
-      <NuxtImg src="/konsept/konsept3.jpg" class="spice-image" />
-      <h3>Önce Güven</h3>
-      <p>
-        Tüm birimlerimizde kalite ve güven esasına dayalı iş ilişkisi kurumsal
-        kültürümüzün bir parçasıdır.
-      </p>
-    </div>
-    <div class="spice-card">
-      <NuxtImg src="/konsept/konsept5.jpg" class="spice-image" />
-      <h3>Standartlara Uygunluk</h3>
-      <p>
-        Tüm hammaddelerin Türk Gıda Kodeksine uygunluğunun sağlanması ve kalite
-        güvence sistemimize uygun üretim yapmak.
+        {{ item.phrase }}
       </p>
     </div>
   </section>
 </template>
+
+<script setup>
+const slogans = [
+  {
+    title: "Önce İnsan",
+    phrase:
+      "Tarımdan üretime, üretimden satışa, dağıtımdan son kullanıcıya kadar emek veren tüm kaynaklarımız Halil Yıldız Baharat'ı oluşturmaktadır.",
+  },
+  {
+    title: "Önce Güven",
+    phrase:
+      "Tüm birimlerimizde kalite ve güven esasına dayalı iş ilişkisi kurumsal kültürümüzün bir parçasıdır.",
+  },
+  {
+    title: "Standartlara Uygunluk",
+    phrase:
+      "Tüm hammaddelerin Türk Gıda Kodeksine uygunluğunun sağlanması ve kalite güvence sistemimize uygun üretim yapmak.",
+  },
+];
+</script>
 
 <style scoped>
 .spice-section {

@@ -29,18 +29,25 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import { useNuxtApp } from "#app";
-
+import { getCachedImage, setCachedImage } from "~/composables/cache";
 const { $supabase } = useNuxtApp();
 
 const catalog = ref([]);
 const photos = ref([]);
 
 const getSignedUrl = async (path) => {
+  const cachedUrl = getCachedImage(path);
+  if (cachedUrl) {
+    return cachedUrl;
+  }
+
   try {
     const { data, error } = await $supabase.storage
       .from("fotograflar")
       .createSignedUrl(path, 60 * 60); // URL geçerliliği 1 saat
     if (error) throw error;
+
+    setCachedImage(path, data.signedUrl);
     return data.signedUrl;
   } catch (error) {
     console.error("Error creating signed URL: ", error.message);

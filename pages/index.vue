@@ -2,7 +2,7 @@
   <div>
     <div class="hero">
       <video width="100%" height="auto" playsinline controls autoplay>
-        <source src="/site/hero.mp4" type="video/mp4">
+        <source src="/site/hero.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
@@ -17,27 +17,6 @@
       <HomeClients />
 
       <HomeValues />
-
-      <div class="index-card">
-        <header>
-          <h1>HAKKIMIZDA</h1>
-        </header>
-        <section>
-          <p>
-            İstanbul'un bağrında baharat dünyasına adanmış bir işletmeyiz.
-            Bildik bir deyiş ile bir baharatçıyız. Tarladan sofraya kadar olan
-            yolculukta, niteliği ve özeni hep gözetip koruyoruz. Size en iyisini
-            sunmak için çalışıyoruz.
-          </p>
-        </section>
-        <footer>
-          <NuxtLink to="/hakkimizda" class="button"
-            >Hepsini okumak için tıklayınız.</NuxtLink
-          >
-        </footer>
-      </div>
-
-
     </div>
   </div>
 </template>

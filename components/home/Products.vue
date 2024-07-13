@@ -1,7 +1,12 @@
 <template>
   <div class="home-products">
     <h2>Birkaç ürünümüz</h2>
-    <div v-for="item in theProducts" :key="item.slug" class="card-x">
+    <div
+      v-if="theProducts.length <= 3"
+      v-for="item in theProducts"
+      :key="item.slug"
+      class="card-x"
+    >
       <div class="left">
         <div class="box"></div>
       </div>
@@ -18,6 +23,7 @@
         </div>
       </div>
     </div>
+    <TheLoading v-else />
 
     <NuxtLink class="button primary-button" to="/urunler"
       >Diğer ürünler</NuxtLink

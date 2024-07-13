@@ -1,27 +1,6 @@
 <template>
   <div class="page-content">
-    <div class="product-image-container" style="margin-bottom: -35px">
-      <Swiper
-        v-if="photos.length > 0"
-        :modules="[SwiperAutoplay, SwiperPagination]"
-        :autoplay="{
-          delay: 4000,
-          disableOnInteraction: true,
-        }"
-      >
-        <SwiperSlide v-for="photo in photos" :key="photo.url">
-          <NuxtImg :src="photo.url" loading="lazy" :alt="photo.name" />
-        </SwiperSlide>
-      </Swiper>
-      <div v-else>
-        <div class="lds-ring">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </div>
-    </div>
+    <SinglePhoto />
 
     <div v-if="currentProduct" class="container">
       <section>
@@ -48,21 +27,7 @@ import { useNuxtApp } from "#app";
 const { $supabase } = useNuxtApp();
 const currentProduct = ref(null);
 const recommendedProducts = ref([]);
-const photos = ref([]);
 const route = useRoute();
-
-const getSignedUrl = async (path) => {
-  try {
-    const { data, error } = await $supabase.storage
-      .from("fotograflar")
-      .createSignedUrl(path, 60 * 60); // URL geçerliliği 1 saat
-    if (error) throw error;
-    return data.signedUrl;
-  } catch (error) {
-    console.error("Error creating signed URL: ", error.message);
-    return null;
-  }
-};
 
 const fetchProductData = async () => {
   try {
@@ -80,33 +45,8 @@ const fetchProductData = async () => {
   }
 };
 
-const fetchProductPhotos = async () => {
-  const slug = route.params.slug;
-  try {
-    const { data, error } = await $supabase.storage
-      .from("fotograflar")
-      .list(`urunler/${slug}`, {
-        limit: 100, // Fotoğraf sayısına göre limit ayarlayabilirsiniz
-        sortBy: { column: "name", order: "asc" },
-      });
-
-    if (error) throw error;
-
-    const urls = await Promise.all(
-      data.map(async (file) => {
-        const url = await getSignedUrl(`urunler/${slug}/${file.name}`);
-        return { name: file.name, url };
-      })
-    );
-    photos.value = urls.filter((url) => url.url !== null);
-  } catch (error) {
-    console.error("Error listing images: ", error.message);
-  }
-};
-
 onMounted(async () => {
   await fetchProductData();
-  await fetchProductPhotos();
 });
 </script>
 
@@ -129,13 +69,6 @@ onMounted(async () => {
   flex-direction: column;
   align-items: center;
   margin-bottom: 40px;
-}
-
-.product-image-container {
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  text-align: center;
 }
 
 .product-title {
@@ -164,12 +97,6 @@ onMounted(async () => {
   border-radius: 4px;
 }
 
-.product-thumbnail {
-  max-width: 200px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 .product-info {
   text-align: center;
 }
@@ -177,46 +104,6 @@ onMounted(async () => {
 @media (max-width: 768px) {
   .product-detail-wrapper {
     flex-direction: column;
-  }
-}
-
-.lds-ring,
-.lds-ring div {
-  box-sizing: border-box;
-}
-.lds-ring {
-  display: inline-block;
-  position: relative;
-  width: 60px;
-  height: 60px;
-}
-.lds-ring div {
-  box-sizing: border-box;
-  display: block;
-  position: absolute;
-  width: 64px;
-  height: 64px;
-  margin: 8px;
-  border: 8px solid #d35400;
-  border-radius: 50%;
-  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #d35400 transparent transparent transparent;
-}
-.lds-ring div:nth-child(1) {
-  animation-delay: -0.45s;
-}
-.lds-ring div:nth-child(2) {
-  animation-delay: -0.3s;
-}
-.lds-ring div:nth-child(3) {
-  animation-delay: -0.15s;
-}
-@keyframes lds-ring {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
 </style>
