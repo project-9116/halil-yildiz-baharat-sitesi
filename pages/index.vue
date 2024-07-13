@@ -1,12 +1,10 @@
 <template>
   <div>
     <div class="hero">
-      <NuxtImg id="hero-img" src="/site/hero.jpg" />
-      <div class="hero-text">
-        <h1>halil yıldız baharat</h1>
-        <h2>damak tadı kırıntıları</h2>
-        <NuxtLink to="/urunler">-> tüm ürünlerimizde</NuxtLink>
-      </div>
+      <video width="100%" height="auto" playsinline controls autoplay>
+        <source src="/site/hero.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
     <div class="container home-content">
       <!-- TODO: sayfa yenilendiginde yeteri kadar sure gecmediyse degismesin
@@ -15,6 +13,8 @@
       <HomeSlogans />
 
       <HomeProducts />
+
+      <HomeClients />
 
       <HomeValues />
 
@@ -37,7 +37,7 @@
         </footer>
       </div>
 
-      <HomeClients />
+
     </div>
   </div>
 </template>
@@ -45,7 +45,6 @@
 <style>
 .hero {
   position: relative;
-  height: 580px;
   overflow: hidden;
 }
 .hero-text {
