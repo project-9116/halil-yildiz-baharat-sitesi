@@ -1,10 +1,11 @@
 <template>
   <div>
     <div class="hero">
-      <video width="100%" height="auto" playsinline controls autoplay>
+      <HomeHero />
+      <!-- <video width="100%" height="auto" playsinline autoplay>
         <source src="/site/hero.mp4" type="video/mp4" />
         Your browser does not support the video tag.
-      </video>
+      </video> -->
     </div>
     <div class="container home-content">
       <!-- TODO: sayfa yenilendiginde yeteri kadar sure gecmediyse degismesin
