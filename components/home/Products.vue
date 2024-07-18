@@ -84,3 +84,13 @@ onMounted(async () => {
   }
 });
 </script>
+
+<style scoped>
+.button {
+  background: #d35400;
+  padding: 10px;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+}
+</style>

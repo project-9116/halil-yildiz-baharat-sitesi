@@ -17,7 +17,7 @@
 
       <HomeClients />
 
-      <HomeValues />
+      <!-- <HomeValues /> -->
     </div>
   </div>
 </template>
