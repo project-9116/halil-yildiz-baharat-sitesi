@@ -144,6 +144,8 @@ nav > div {
 footer {
   padding: 8px 0px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-item {
@@ -438,15 +440,20 @@ header {
 
 .container {
   padding: 0 5px;
+  max-width: 390px;
 }
 
 #page-content {
   overflow: auto;
   height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 #page-content > .container {
   padding: 48px 24px 24px 24px;
+  max-width: 390px;
 }
 
 /* **************************************** */
@@ -503,13 +510,18 @@ header {
   }
   .container {
     padding: 0 5px;
+    max-width: 390px;
   }
   #page-content {
     overflow: auto;
     height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
   #page-content > .container {
     padding: 48px 24px 24px 24px;
+    max-width: 390px;
   }
   /* **************************************** */
 }

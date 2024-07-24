@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="flex">
+    <div class="flex container">
       <div class="left-icon footer-item">
         <div class="nav-item" @click="navigateBack()">
           <Icon name="left" />

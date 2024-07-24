@@ -1,6 +1,7 @@
 <template>
   <header>
     <nav>
+      <div class="container">
       <div>
         <div class="nav-item" @click="menuNavigate()">
           <Icon name="hamburger" />
@@ -21,6 +22,7 @@
       <!-- <div class="flex v-center t-center">
         <NuxtLink to="/hakkimizda"> Halil Yildiz Baharat </NuxtLink>
       </div> -->
+    </div>
     </nav>
   </header>
 </template>
