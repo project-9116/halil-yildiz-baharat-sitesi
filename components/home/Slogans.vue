@@ -14,19 +14,19 @@
 <script setup>
 const slogans = [
   {
-    title: "Önce İnsan",
+    title: "Özenle Üretiyoruz",
     phrase:
-      "Tarımdan üretime, üretimden satışa, dağıtımdan son kullanıcıya kadar emek veren tüm kaynaklarımız Halil Yıldız Baharat'ı oluşturmaktadır.",
+      "Tarım aşamasından üretime, üretimden satışa ve dağıtıma kadar tüm süreçlerde emeği geçen herkesle birlikte Yıldız Baharat’ı oluşturuyoruz. Doğadan sofralarınıza en kaliteli baharatları sunuyoruz.",
   },
   {
-    title: "Önce Güven",
+    title: "Güvenle Tüketin",
     phrase:
-      "Tüm birimlerimizde kalite ve güven esasına dayalı iş ilişkisi kurumsal kültürümüzün bir parçasıdır.",
+      "Tüm birimlerimizde kalite ve güven önceliğimizdir. Yıldız Baharat olarak, ürünlerimizi güvenle tüketebilmeniz için titizlikle çalışıyoruz.",
   },
   {
-    title: "Standartlara Uygunluk",
+    title: "Kalite ve Standartlar",
     phrase:
-      "Tüm hammaddelerin Türk Gıda Kodeksine uygunluğunun sağlanması ve kalite güvence sistemimize uygun üretim yapmak.",
+      "Tüm hammaddelerimizin Türk Gıda Kodeksi'ne uygunluğunu sağlamak ve kalite güvence sistemimize uygun olarak üretim yapmak bizim için vazgeçilmezdir. Yıldız Baharat’ta standartlara bağlı kalarak en iyi ürünleri sunuyoruz.",
   },
 ];
 </script>

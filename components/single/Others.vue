@@ -1,12 +1,7 @@
 <template>
   <div class="home-products">
     <h2>Birkaç ürünümüz</h2>
-    <div
-      v-if="theProducts.length <= 4"
-      v-for="item in theProducts"
-      :key="item.slug"
-      class="card-x"
-    >
+    <div v-if="theProducts.length <= 4" v-for="item in theProducts" :key="item.slug" class="card-x">
       <div class="left">
         <div class="box"></div>
       </div>
@@ -26,9 +21,7 @@
 
     <TheLoading v-else />
 
-    <NuxtLink class="button primary-button" to="/urunler"
-      >Diğer ürünler</NuxtLink
-    >
+    <NuxtLink class="button primary-button" to="/urunler">Diğer ürünler</NuxtLink>
   </div>
 </template>
 
@@ -85,3 +78,12 @@ onMounted(async () => {
   }
 });
 </script>
+<style scoped>
+.button {
+  background: #d35400;
+  padding: 10px;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+}
+</style>
