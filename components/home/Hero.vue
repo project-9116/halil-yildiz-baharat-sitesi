@@ -11,6 +11,9 @@
 </template>
 
 <style scoped>
+.hero{
+  width: calc(100% + 48px);
+}
 .video-container {
   position: relative;
   width: 100%;
@@ -20,6 +23,7 @@
   box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
   overflow: hidden;
   will-change: transform;
+
 }
 
 .hero-video {

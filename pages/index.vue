@@ -1,9 +1,9 @@
 <template>
 
   <div>
-    <HomeHero />
 
     <div class="container home-content">
+      <HomeHero />
 
       <HomeSlogans />
 

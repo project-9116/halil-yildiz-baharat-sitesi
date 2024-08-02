@@ -33,10 +33,11 @@ const slogans = [
 
 <style scoped>
 .spice-section {
-  margin-top: 100px;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  padding-top: 56px;
+  gap: 28px;
 }
 
 .spice-card {
@@ -55,14 +56,11 @@ const slogans = [
   height: 120px;
   border-radius: 50%;
   background-position: center;
-  margin: 0 auto 1rem;
-  position: absolute;
-  top: -50px;
-  left: calc(50% - 50px);
+  margin: -80px auto 1rem;
 }
 
 h3 {
-  margin-top: 3rem;
+  margin-top: 2rem;
   font-size: 1.5rem;
 }
 
