@@ -18,8 +18,6 @@
   padding-top: 150%;
   /* Yüksekliği arttırarak videonun boyunu ayarlıyoruz */
   box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
-  margin-top: 1.6em;
-  border-radius: 8px;
   overflow: hidden;
   will-change: transform;
 }

@@ -58,6 +58,8 @@ p {
   --scroll-track: rgb(0 0 0 / 0.2%);
   --scroll-thumb-color: #00000002;
   --scroll-thumb-radius: 10px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .scrollbar:hover {
@@ -73,6 +75,7 @@ p {
 .scrollbar::-webkit-scrollbar {
   width: 8px;
   height: 8px;
+  display: none;
 }
 
 .scrollbar::-webkit-scrollbar-track {
@@ -100,7 +103,6 @@ div.logo {
   border-radius: 50%;
   z-index: 999;
   position: absolute;
-  top: -20px;
   left: 0;
   right: 0;
   margin: auto;
