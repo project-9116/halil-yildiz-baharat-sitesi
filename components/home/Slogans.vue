@@ -60,7 +60,7 @@ const slogans = [
 }
 
 h3 {
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-size: 1.5rem;
 }
 
