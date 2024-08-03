@@ -14,7 +14,7 @@
           <p>{{ currentProduct.info }}</p>
         </div>
       </section>
-      <SingleOthers />
+      <LazySingleOthers />
     </div>
   </div>
 </template>

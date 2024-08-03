@@ -2,8 +2,7 @@
   <div class="hero">
     <div class="video-container">
       <video autoplay loop muted playsinline class="hero-video">
-        <source src="https://d3ffi9q6w5a2fe.cloudfront.net/A%C5%9F%C4%B1n%C4%B1zda%20baharat%C4%B1m%C4%B1z%20olsun.mp4"
-          type="video/mp4">
+        <source src="https://d3n88fskc9kmpv.cloudfront.net/mobile-video.mp4" type="video/mp4">
         Tarayıcınız bu videoyu oynatmayı desteklemiyor.
       </video>
     </div>
@@ -11,9 +10,10 @@
 </template>
 
 <style scoped>
-.hero{
+.hero {
   width: calc(100% + 48px);
 }
+
 .video-container {
   position: relative;
   width: 100%;

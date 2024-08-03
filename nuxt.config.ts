@@ -1,8 +1,19 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: false },
-  modules: ["@nuxt/image", "@nuxt/icon", "nuxt-swiper"],
+  // build: {
+  //   extractCSS: true, // CSS'yi ayrı dosyalara ayır
+  //   optimization: {
+  //     splitChunks: {
+  //       layouts: true,
+  //       pages: true,
+  //       commons: true,
+  //     },
+  //   },
+  // },
+
   css: ["~/assets/scss/theme.scss"],
+
+  modules: ["@nuxt/image", "@nuxt/icon", "nuxt-swiper"],
 
   app: {
     pageTransition: { name: "page", mode: "out-in" },
@@ -21,11 +32,6 @@ export default defineNuxtConfig({
         "streamline:interface-setting-menu-parallel-hamburger-circle-navigation-parallel-hamburger-buttonmenu-circle",
     },
   },
-  // build: {
-  //   loaders: {
-  //     scss: {
-  //       additionalData: `@import "@/assets/scss/_settings.scss";`,
-  //     },
-  //   },
-  // },
+
+  ssr: true,
 });

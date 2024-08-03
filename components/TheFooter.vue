@@ -127,42 +127,4 @@ async function navigateForward() {
   }
 }
 
-async function navigateLeft() {
-  console.log(router.options);
-  if (routerIndex.value == 0) {
-    routerIndex.value = 20;
-    nextRoute.value = slugs.value[routerIndex.value];
-    await navigateTo("/" + nextRoute.value);
-  } else {
-    routerIndex.value -= 1;
-    nextRoute.value = slugs.value[routerIndex.value];
-    await navigateTo("/" + nextRoute.value);
-  }
-}
-
-async function navigateRight() {
-  console.log(router.currentRoute.value);
-
-  if (routerIndex.value == 20) {
-    routerIndex.value = 0;
-    nextRoute.value = slugs.value[routerIndex.value];
-    await navigateTo("/" + nextRoute.value);
-  } else {
-    routerIndex.value += 1;
-    nextRoute.value = slugs.value[routerIndex.value];
-    await navigateTo("/" + nextRoute.value);
-  }
-}
-
-// async function navigatePages(whereTo) {
-//   if (routerIndex.value <= 4 && routerIndex.value >= 0) {
-//     routerIndex.value += whereTo;
-
-//     await navigateTo(routesArr[routerIndex.value]);
-//   } else {
-//     routerIndex.value = 1;
-//     return routesArr[routerIndex.value];
-//   }
-//   // console.log(router.options.routes[routerIndex.value]);
-// }
 </script>

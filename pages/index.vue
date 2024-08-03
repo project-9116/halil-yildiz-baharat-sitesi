@@ -7,9 +7,9 @@
 
       <HomeSlogans />
 
-      <HomeProducts />
+      <LazyHomeProducts />
 
-      <HomeClients />
+      <LazyHomeClients />
 
       <!-- <HomeValues /> -->
     </div>
