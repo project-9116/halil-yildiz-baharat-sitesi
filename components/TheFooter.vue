@@ -40,9 +40,10 @@ const catalog = ref([]);
 const slugs = ref([]);
 
 onMounted(async () => {
+
   try {
     const response = await fetch("/data/products.json");
-    console.log(response);
+    // console.log(response);
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }
@@ -50,7 +51,7 @@ onMounted(async () => {
     catalog.value = products;
     // Her nesnenin slug bilgisini almak için map kullanıyoruz
     slugs.value = catalog.value.map((product) => product.slug);
-    console.log("Bunlar slugs:", slugs.value);
+    // console.log("Bunlar slugs:", slugs.value);
   } catch (error) {
     console.error("Veri çekme hatası:", error);
   }
