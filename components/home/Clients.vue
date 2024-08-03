@@ -144,6 +144,7 @@ onMounted(startScrolling);
 .client-thumbnail:hover {
   transform: scale(1.1);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  padding: 10px;
 }
 
 @media (max-width: 768px) {

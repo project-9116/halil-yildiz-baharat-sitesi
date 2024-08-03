@@ -1,6 +1,7 @@
 <template>
-  <div>
+  <div class="page-content">
     <div class="container">
+      <header></header>
       <ul class="page-menu">
         <li>
           <NuxtLink
