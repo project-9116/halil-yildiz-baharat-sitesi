@@ -24,10 +24,10 @@
       </div>
     </div>
     <TheLoading v-else />
-
-    <NuxtLink class="button primary-button" to="/urunler"
-      >Diğer ürünler</NuxtLink
-    >
+    <div style="text-align: center; margin-top:28px;">
+      <NuxtLink class="button primary-button" to="/urunler"
+      >Diğer ürünler</NuxtLink>
+    </div>
   </div>
 </template>
 
