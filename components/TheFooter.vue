@@ -4,17 +4,20 @@
       <div class="left-icon footer-item">
         <div class="nav-item" @click="navigateBack()">
           <Icon name="left" />
+          <p>{{ previousRouteLabel || 'ana sayfa' }}</p>
         </div>
       </div>
 
       <div class="menu footer-item">
         <NuxtLink class="nav-item" to="/urunler">
           <Icon name="salt" />
+          <p>urunler</p>
+
         </NuxtLink>
 
         <div style="display: none">
           <NuxtLink to="/degerlerimiz"> Degerlerimiz </NuxtLink>
-          <NuxtLink to="/urunler"> iletisim </NuxtLink>
+          <NuxtLink to="/urunler"> İletişim </NuxtLink>
           <NuxtLink to="/"> Tüm hakları saklıdır.</NuxtLink>
         </div>
       </div>
@@ -22,110 +25,116 @@
       <div class="right-icon footer-item">
         <div class="nav-item" @click="navigateForward()">
           <Icon name="right" />
+          <p>{{ nextRouteLabel || 'ana sayfa' }}</p>
         </div>
       </div>
     </div>
   </footer>
 </template>
+
 <script setup>
-import { useRouter } from "vue-router";
-import { ref } from "vue";
+import { ref, onMounted, watch, computed } from 'vue';
+import { useRouter } from 'vue-router';
 
 const router = useRouter();
 
 const routerIndex = ref(2);
-const nextRoute = ref("");
-const currentRoute = ref("");
+const nextRoute = ref('');
 const catalog = ref([]);
 const slugs = ref([]);
 
 onMounted(async () => {
-
   try {
-    const response = await fetch("/data/products.json");
-    // console.log(response);
+    const response = await fetch('/data/products.json');
     if (!response.ok) {
-      throw new Error("Network response was not ok");
+      throw new Error('Network response was not ok');
     }
     const products = await response.json();
     catalog.value = products;
-    // Her nesnenin slug bilgisini almak için map kullanıyoruz
     slugs.value = catalog.value.map((product) => product.slug);
-    // console.log("Bunlar slugs:", slugs.value);
   } catch (error) {
-    console.error("Veri çekme hatası:", error);
+    console.error('Veri çekme hatası:', error);
   }
 });
 
-//TODO: herhangi bir sayfadayken sayfalar arasi, herhangi bir urundeyken urunler arasi gezinsin.
-const routesArr = ref([
-  "degerlerimiz",
-  "urunler",
-  "",
-  "hakkimizda",
-  "iletisim",
-]);
+const routesArr = ref(['urunler', '', 'hakkimizda', 'iletisim']);
 
-async function navigateBack() {
-  let currentPath = router.currentRoute.value.fullPath;
-  currentPath = currentPath.replace("/", "");
 
-  if (routesArr.value.includes(currentPath) || currentPath == "menu") {
+const navigateBack = async () => {
+  let currentPath = router.currentRoute.value.fullPath.replace('/', '');
+
+  if (routesArr.value.includes(currentPath) || currentPath == 'menu') {
     routerIndex.value = routesArr.value.indexOf(currentPath);
 
     if (routerIndex.value == 0) {
-      routerIndex.value = 4;
-      nextRoute.value = routesArr.value[routerIndex.value];
-      await navigateTo("/" + nextRoute.value);
+      routerIndex.value = routesArr.value.length - 1;
     } else {
       routerIndex.value -= 1;
-      nextRoute.value = routesArr.value[routerIndex.value];
-      await navigateTo("/" + nextRoute.value);
     }
+    nextRoute.value = routesArr.value[routerIndex.value];
   } else {
     routerIndex.value = slugs.value.indexOf(currentPath);
 
     if (routerIndex.value == 0) {
-      routerIndex.value = 20;
-      nextRoute.value = slugs.value[routerIndex.value];
-      await navigateTo("/" + nextRoute.value);
+      routerIndex.value = slugs.value.length - 1;
     } else {
       routerIndex.value -= 1;
-      nextRoute.value = slugs.value[routerIndex.value];
-      await navigateTo("/" + nextRoute.value);
     }
+    nextRoute.value = slugs.value[routerIndex.value];
   }
-}
 
-async function navigateForward() {
-  let currentPath = router.currentRoute.value.fullPath;
-  currentPath = currentPath.replace("/", "");
+  await router.push('/' + nextRoute.value);
+};
 
-  if (routesArr.value.includes(currentPath) || currentPath == "menu") {
+const navigateForward = async () => {
+  let currentPath = router.currentRoute.value.fullPath.replace('/', '');
+
+  if (routesArr.value.includes(currentPath) || currentPath == 'menu') {
     routerIndex.value = routesArr.value.indexOf(currentPath);
 
-    if (routerIndex.value == 4) {
+    if (routerIndex.value == routesArr.value.length - 1) {
       routerIndex.value = 0;
-      nextRoute.value = routesArr.value[routerIndex.value];
-      await navigateTo("/" + nextRoute.value);
     } else {
       routerIndex.value += 1;
-      nextRoute.value = routesArr.value[routerIndex.value];
-      await navigateTo("/" + nextRoute.value);
     }
+    nextRoute.value = routesArr.value[routerIndex.value];
   } else {
     routerIndex.value = slugs.value.indexOf(currentPath);
 
-    if (routerIndex.value == 20) {
+    if (routerIndex.value == slugs.value.length - 1) {
       routerIndex.value = 0;
-      nextRoute.value = slugs.value[routerIndex.value];
-      await navigateTo("/" + nextRoute.value);
     } else {
       routerIndex.value += 1;
-      nextRoute.value = slugs.value[routerIndex.value];
-      await navigateTo("/" + nextRoute.value);
     }
+    nextRoute.value = slugs.value[routerIndex.value];
   }
-}
 
+  await router.push('/' + nextRoute.value);
+};
+
+const previousRouteLabel = computed(() => {
+  let currentPath = router.currentRoute.value.fullPath.replace('/', '');
+  let index;
+
+  if (routesArr.value.includes(currentPath)) {
+    index = routesArr.value.indexOf(currentPath);
+    return routesArr.value[index === 0 ? routesArr.value.length - 1 : index - 1];
+  } else {
+    index = slugs.value.indexOf(currentPath);
+    return slugs.value[index === 0 ? slugs.value.length - 1 : index - 1];
+  }
+});
+
+const nextRouteLabel = computed(() => {
+  let currentPath = router.currentRoute.value.fullPath.replace('/', '');
+  let index;
+
+  if (routesArr.value.includes(currentPath)) {
+    index = routesArr.value.indexOf(currentPath);
+    return routesArr.value[index === routesArr.value.length - 1 ? 0 : index + 1];
+  } else {
+    index = slugs.value.indexOf(currentPath);
+    return slugs.value[index === slugs.value.length - 1 ? 0 : index + 1];
+  }
+});
 </script>

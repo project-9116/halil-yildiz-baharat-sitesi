@@ -26,32 +26,16 @@
             <p>iletisim@halilyildizbaharat.com</p>
           </div>
         </div>
-        
+
       </section>
     </div>
   </div>
 </template>
-
-<script setup>
-import { ref } from "vue";
-
-const formData = ref({
-  name: "",
-  email: "",
-  message: "",
-});
-
-const handleSubmit = () => {
-  alert("Mesajınız gönderildi!");
-  formData.value = { name: "", email: "", message: "" };
-};
-</script>
 
 <style scoped>
 .contact {
   text-align: center;
 }
 
-@media (max-width: 768px) {
-}
+@media (max-width: 768px) {}
 </style>

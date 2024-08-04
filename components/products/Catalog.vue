@@ -9,11 +9,7 @@
           <div class="box">
             <div class="box-img">
               <NuxtLink :to="`/${product.name}`">
-                <NuxtImg
-                  :src="product.url"
-                  :alt="product.name"
-                  loading="lazy"
-                />
+                <NuxtImg :src="product.url" :alt="product.name" loading="lazy" />
               </NuxtLink>
             </div>
             <div class="box-detail">
@@ -65,7 +61,7 @@ const listAllImages = async () => {
       })
     );
     photos.value = urls.filter((url) => url.url !== null);
-    console.log("photos ", photos.value);
+    // console.log("photos ", photos.value);
   } catch (error) {
     console.error("Error listing images: ", error.message);
   }
@@ -79,7 +75,7 @@ onMounted(async () => {
     }
     const products = await response.json();
     catalog.value = products;
-    console.log("Bunlar ürünler:", catalog.value);
+    // console.log("Bunlar ürünler:", catalog.value);
     await listAllImages();
   } catch (error) {
     console.error("Veri çekme hatası:", error);

@@ -2,8 +2,7 @@
   <div class="hero">
     <div class="video-container">
       <video autoplay loop muted playsinline class="hero-video">
-        <source src="https://d3n88fskc9kmpv.cloudfront.net/mobile-video.mp4"
-          type="video/mp4">
+        <source src="https://d3n88fskc9kmpv.cloudfront.net/mobile-video-new.mp4" type="video/mp4">
         Tarayıcınız bu videoyu oynatmayı desteklemiyor.
       </video>
     </div>
