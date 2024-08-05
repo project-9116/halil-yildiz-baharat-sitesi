@@ -16,15 +16,15 @@ const slogans = [
   {
     title: "Özenle Üretiyoruz",
     phrase:
-      "Tarım aşamasından üretime, üretimden satışa ve dağıtıma kadar tüm süreçlerde emeği geçen herkesle birlikte Yıldız Baharat’ı oluşturuyoruz. Doğadan sofralarınıza en kaliteli baharatları sunuyoruz.",
+      "Tarım aşamasından üretime, üretimden satışa ve dağıtıma kadar tüm süreçlerde emeği geçen herkesle birlikte Yıldız Baharat’ı oluşturuyoruz. Doğadan sofralarınıza en nitelikli baharatları sunuyoruz.",
   },
   {
     title: "Güvenle Tüketin",
     phrase:
-      "Tüm birimlerimizde kalite ve güven önceliğimizdir. Yıldız Baharat olarak, ürünlerimizi güvenle tüketebilmeniz için titizlikle çalışıyoruz.",
+      "Tüm birimlerimizde nitelik ve güven önceliğimizdir. Yıldız Baharat olarak, ürünlerimizi güvenle tüketebilmeniz için titizlikle çalışıyoruz.",
   },
   {
-    title: "Kalite ve Standartlar",
+    title: "Nitelik ve Standartlar",
     phrase:
       "Tüm hammaddelerimizin Türk Gıda Kodeksi'ne uygunluğunu sağlamak ve kalite güvence sistemimize uygun olarak üretim yapmak bizim için vazgeçilmezdir. Yıldız Baharat’ta standartlara bağlı kalarak en iyi ürünleri sunuyoruz.",
   },

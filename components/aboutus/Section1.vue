@@ -10,14 +10,19 @@
       <div class="text-content">
         <p>
           Baharat ormanımıza hoş geldiniz! Anadolu'nun dört bir yanından en iyi baharatları bir araya getiriyoruz.
-          Aşlarınızda kullanacağınız baharatların sizi eşsiz bir usta aşçı gibi göstermesini hep isteriz.
+          Aşlarda, yemeklerde kullandığınız bahratların sizi eşsiz bir usta aşçı gibi göstermesini hep isteriz.
         </p>
         <p>
-          Yolculuğumuz, lezzetlere olan tutkumuz ve en iyi malzemeleri temin
-          etme taahhüdümüzle başladı. Satışa sunduğumuz her bir baharatın katı
-          standartlarımızı karşıladığından emin olmak için doğrudan çiftçiler ve
-          tedarikçilerle çalışıyoruz.
+          Gaziantepten başlayan yolculuğumuz İstanbulda Halil Yıldız Baharata dönüştü. Ülkenin dört bir yanında pişmiş
+          yemeklerde baharatlarımız tadılır oldu.
         </p>
+        <p>Paketleyip toptan satışta ve perakende satışta sunduğumuz her bir baharatın genel standartlara ve
+          standartlarımıza uyduğundan emin olmak için doğrudan bahratların kaynağı olan çiftçiler ve tedarikçilerle
+          çalışıyoruz. </p>
+
+        <i>Her ne kadar biz kendimizi anlatsak da ürünlerimiz ile tanınıp, bilinmek isteriz. </i>
+
+        <NuxtLink to="/urunler">Ürünlerimize erişmek için</NuxtLink>
       </div>
     </section>
   </div>

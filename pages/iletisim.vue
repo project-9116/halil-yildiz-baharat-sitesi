@@ -13,17 +13,17 @@
           <div>
             <h2>Halil Yıldız Baharat'ın<br>Yeradı</h2>
             <br>
-            <p>İstanbul</p>
+            <p>Kirazlı, Kirazlı Merkez Cd No:34, 34210, 34200 Bağcılar/İstanbul</p>
           </div>
           <div>
             <h2>Halil Yıldız Baharat'ın<br>Telefon Numarası</h2>
             <br>
-            <p>+90 123 456 7890</p>
+            <p>+90 552 214 21 27</p>
           </div>
           <div>
             <h2>Halil Yıldız Baharat'ın<br>E-posta Yeradı</h2>
             <br>
-            <p>iletisim@halilyildizbaharat.com</p>
+            <p>halilyildizbaharat@gmail.com</p>
           </div>
         </div>
 

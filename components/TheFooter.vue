@@ -4,14 +4,14 @@
       <div class="left-icon footer-item">
         <div class="nav-item" @click="navigateBack()">
           <Icon name="left" />
-          <p>{{ previousRouteLabel || 'ana sayfa' }}</p>
+          <span>{{ previousRouteLabel || 'ana sayfa' }}</span>
         </div>
       </div>
 
       <div class="menu footer-item">
         <NuxtLink class="nav-item" to="/urunler">
           <Icon name="salt" />
-          <p>urunler</p>
+          <span>urunler</span>
 
         </NuxtLink>
 
@@ -25,7 +25,7 @@
       <div class="right-icon footer-item">
         <div class="nav-item" @click="navigateForward()">
           <Icon name="right" />
-          <p>{{ nextRouteLabel || 'ana sayfa' }}</p>
+          <span>{{ nextRouteLabel || 'ana sayfa' }}</span>
         </div>
       </div>
     </div>
@@ -33,7 +33,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, watch, computed } from 'vue';
+import { ref, onMounted, computed } from 'vue';
 import { useRouter } from 'vue-router';
 
 const router = useRouter();
