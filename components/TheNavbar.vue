@@ -2,27 +2,34 @@
   <header>
     <nav>
       <div class="container">
-      <div>
-        <div class="nav-item" @click="menuNavigate()">
-          <Icon name="hamburger" />
+        <div class="nav">
+
+          <div class="nav-item md-hide" @click="menuNavigate()">
+            <Icon name="hamburger" />
+          </div>
+          
+          <div class="logo">
+            <NuxtLink @click="navigating()" :to="nextRoute">
+              <NuxtImg id="logo" src="/site/halil-yildiz-baharat-logosu.png" />
+            </NuxtLink>
+          </div>
+          <div class="nav-item md-show">
+            <NuxtLink class="nav-item" to="/urunler">
+              <Icon name="phone" /> <span>Ürünler</span>
+            </NuxtLink>
+          </div>
+          <div class="nav-item md-show">
+            <NuxtLink class="nav-item" to="/hakkimizda">
+              <Icon name="phone" /> <span>Hakkımızda</span>
+            </NuxtLink>
+          </div>
+          <div class="nav-item">
+            <NuxtLink class="nav-item" to="/iletisim">
+              <Icon name="phone" /> <span>İletişim</span>
+            </NuxtLink>
+          </div>
         </div>
       </div>
-      <div class="logo">
-        <NuxtLink @click="navigating()" :to="nextRoute">
-          <NuxtImg id="logo" src="/site/halil-yildiz-baharat-logosu.png" />
-        </NuxtLink>
-      </div>
-      <div>
-        <NuxtLink class="nav-item" to="/iletisim">
-          <Icon name="phone" />
-        </NuxtLink>
-      </div>
-      <!-- <NuxtLink to="/degerlerimiz"> Degerlerimiz </NuxtLink> -->
-
-      <!-- <div class="flex v-center t-center">
-        <NuxtLink to="/hakkimizda"> Halil Yildiz Baharat </NuxtLink>
-      </div> -->
-    </div>
     </nav>
   </header>
 </template>
