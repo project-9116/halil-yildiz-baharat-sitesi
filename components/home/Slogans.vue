@@ -35,7 +35,8 @@ const slogans = [
 .spice-section {
   display: flex;
   justify-content: space-around;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding-top: 56px;
   gap: 28px;
 }
@@ -45,6 +46,7 @@ const slogans = [
   background-color: #fff;
   border-radius: 20px;
   width: 100%;
+  max-width: 290px;
   text-align: center;
   color: #d35400;
   padding: 1.5rem;
